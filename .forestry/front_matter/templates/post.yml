@@ -1,0 +1,47 @@
+---
+label: Blog post
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+  - type: datetime
+    name: date
+    label: Date
+  - type: text
+    name: slug
+    label: Slug
+  - type: list
+    name: tags
+    label: Tags
+  - type: list
+    name: categories
+    label: Categories
+  - type: list
+    name: series
+    label: Series
+  - type: text
+    name: externalLink
+    label: External Link
+  - type: text
+    name: description
+    label: Description
+  - type: boolean
+    name: math
+    label: Math
+  - type: boolean
+    name: katex
+    label: Katex
+  - type: list
+    name: images
+    label: Images
+  - type: file
+    name: featured_image
+    label: Featured Image
+    description: Image featured in post display
+pages:
+  - exampleSite/content/posts/external-post.md
+  - exampleSite/content/posts/goisforlovers.md
+  - exampleSite/content/posts/hugoisforlovers.md
+  - exampleSite/content/posts/render-latex-using-katex.md
+  - exampleSite/content/posts/theme-demo.md

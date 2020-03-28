@@ -1,0 +1,64 @@
+---
+label: Language Config
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: languagename
+    label: Languagename
+  - type: text
+    name: title
+    label: Title
+  - type: field_group
+    name: params
+    label: Params
+    fields:
+      - type: text
+        name: author
+        label: Author
+      - type: text
+        name: info
+        label: Info
+      - type: text
+        name: description
+        label: Description
+      - type: text
+        name: keywords
+        label: Keywords
+      - type: text
+        name: footercontent
+        label: Footercontent
+      - type: number
+        name: since
+        label: Since
+  - type: field_group
+    name: menu
+    label: Menu
+    fields:
+      - type: field_group_list
+        name: main
+        label: Main
+        fields:
+          - type: text
+            name: identifier
+            label: Identifier
+          - type: text
+            name: name
+            label: Title
+            config:
+              required: true
+          - type: text
+            name: url
+            label: URL
+            config:
+              required: true
+          - type: number
+            name: weight
+            label: Weight
+            description: Position for sorting
+          - type: text
+            name: parent
+            label: Parent Menu Identifier
+            description: The parent of an entry should be the identifier of another entry.
+        config:
+          labelField: name

@@ -1,0 +1,162 @@
+---
+label: Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: text
+    name: baseurl
+    label: Base URL
+    description: Hostname (and path) to the root
+  - type: text
+    name: languagecode
+    label: Languagecode
+  - type: text
+    name: defaultcontentlanguage
+    label: Defaultcontentlanguage
+  - type: text
+    name: themesDir
+    label: Themes Dir
+  - type: text
+    name: theme
+    label: Theme Name
+  - type: number
+    name: paginate
+    label: Paginate
+  - type: boolean
+    name: canonifyurls
+    label: Canonifyurls
+  - type: text
+    name: pygmentsstyle
+    label: Pygmentsstyle
+  - type: boolean
+    name: pygmentscodefences
+    label: Pygmentscodefences
+  - type: boolean
+    name: pygmentscodefencesguesssyntax
+    label: Pygmentscodefencesguesssyntax
+  - type: text
+    name: disqusShortname
+    label: Disqus Shortname
+  - type: field_group
+    name: params
+    label: Params
+    description: Site parameters
+    fields:
+      - type: text
+        name: author
+        label: Author
+      - type: text
+        name: description
+        label: Description
+      - type: text
+        name: keywords
+        label: Keywords
+      - type: text
+        name: info
+        label: Info
+      - type: text
+        name: avatarurl
+        label: Avatarurl
+      - type: text
+        name: footercontent
+        label: Footercontent
+      - type: text
+        name: dateformat
+        label: Dateformat
+      - type: boolean
+        name: hideCredits
+        label: Hide Credits
+      - type: boolean
+        name: hideCopyright
+        label: Hide Copyright
+      - type: number
+        name: since
+        label: Since
+      - type: text
+        name: commit
+        label: Commit
+      - type: boolean
+        name: rtl
+        label: Rtl
+      - type: text
+        name: colorscheme
+        label: Colorscheme
+      - type: number
+        name: maxSeeAlsoItems
+        label: Max See Also Items
+      - type: list
+        name: custom_css
+        label: Custom Css
+      - type: list
+        name: custom_js
+        label: Custom Js
+      - type: field_group_list
+        name: social
+        label: Social Media Icons
+        fields:
+          - type: text
+            name: name
+            label: Name
+          - type: text
+            name: icon
+            label: Icon
+          - type: number
+            name: weight
+            label: Weight
+          - type: text
+            name: url
+            label: URL
+          - type: text
+            name: rel
+            label: Rel
+          - type: text
+            name: type
+            label: Type
+      - type: field_group
+        name: fathomAnalytics
+        label: Fathom Analytics (optional)
+        fields:
+          - type: text
+            name: siteID
+            label: ID for Fathom Analytics
+          - type: text
+            name: serverURL
+            label: URL for Fathom Analytics
+  - type: field_group
+    name: languages
+    label: Languages
+    fields:
+      - type: field_group
+        name: en
+        label: En
+        fields:
+          - type: include
+            name: include_language_config
+            label: Language Config
+            template: language_config
+      - type: field_group
+        name: pt-br
+        label: Pt Br
+        fields:
+          - type: include
+            name: include_language_config
+            label: Language Config
+            template: language_config
+  - type: field_group
+    name: taxonomies
+    label: Taxonomies
+    fields:
+      - type: text
+        name: category
+        label: Category
+      - type: text
+        name: series
+        label: Series
+      - type: text
+        name: tag
+        label: Tag
