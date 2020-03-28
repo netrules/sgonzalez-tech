@@ -2,30 +2,36 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: exampleSite/static/admin
-webhook_url: 'https://api.stackbit.com/project/5e7fe151ebe6ab001932e275/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/5e7fe151ebe6ab001932e275/webhook/forestry
 sections:
-  - type: document
-    label: Config
-    path: exampleSite/config.toml
-    templates:
-      - config
-  - type: directory
-    path: exampleSite/content
-    match: '*.md'
-    exclude: _index.md
-    label: Basic Page
-    create: all
-    templates:
-      - basicpage
-  - type: directory
-    path: exampleSite/content/posts
-    match: '**/*'
-    label: Blog post
-    create: all
-    templates:
-      - post
+- type: document
+  path: exampleSite/config.toml
+  label: Config
+  templates:
+  - config
+- type: directory
+  path: exampleSite/content
+  label: Basic Page
+  create: all
+  match: "*.md"
+  exclude: _index.md
+  templates:
+  - basicpage
+- type: directory
+  path: exampleSite/content/posts
+  label: Blog post
+  create: all
+  match: "**/*"
+  templates:
+  - post
 upload_dir: exampleSite/static/images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  instant_preview_command: npm run forestry:preview
