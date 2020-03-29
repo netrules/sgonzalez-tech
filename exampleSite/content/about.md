@@ -1,29 +1,6 @@
 ---
-title: About Hugo
+title: About Santiago
 slug: about
+
 ---
-
-Hugo is a static site engine written in Go.
-
-
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
-
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+Prepared to change the world with contributions to technology, improving the way it is handled by accessible means to make HCI more usable and ergonomic. He is well studied in algorithm making, improving code performance, and developing simple solutions to complex problems. Sometimes, he likes to say, a problem has to been seen under different contexts in order to find the appropriate approach to tackling something which otherwise would be extremely complicated.
