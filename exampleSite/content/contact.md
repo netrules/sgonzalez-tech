@@ -3,6 +3,6 @@ title: Contact
 slug: contact
 
 ---
-You can send me an e-mail to:
+You can reach me at:
 
-* contact@sgonzalez.tech
+* [contact@sgonzalez.tech](mailto:contact@sgonzalez.tech "my main email")
