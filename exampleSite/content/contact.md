@@ -1,6 +1,7 @@
 ---
 title: Contact
 slug: contact
----
 
-Follow me, @johndoe.
+---
+You can send me an e-mail to:  
+\- contact@sgonzalez.tech
