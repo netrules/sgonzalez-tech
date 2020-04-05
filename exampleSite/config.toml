@@ -28,8 +28,8 @@ name = "Contact me"
 url = "contact/"
 weight = 5
 [languages.pt-br]
-languagename = "Espa"
-title = "João Ninguém"
+languagename = "Español"
+title = "Santiago González"
 [[languages.pt-br.menu.main]]
 name = "Sobre"
 url = "about/"
@@ -47,11 +47,12 @@ name = "Contato"
 url = "contact/"
 weight = 5
 [languages.pt-br.params]
-author = "João Ninguém"
-description = "Sítio pessoal de João Ninguém"
-footercontent = "Coloque algum texto aqui."
-info = "Full Stack DevOps e Mágico"
-keywords = "blog,desenvolvedor,pessoal"
+author = "Santiago González"
+description = "Página técnica de Santiago González"
+footercontent = "Gracias por visitar mi página 😊"
+info = "DevOps & Software"
+keywords = "blog,desarrollador,personal,devops,software"
+since = 2020
 [params]
 author = "Santiago González"
 avatarurl = "images/avatar.jpg"
