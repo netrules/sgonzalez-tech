@@ -9,9 +9,9 @@ fields:
   name: slug
   label: Slug
 pages:
-- exampleSite/content/about.md
 - exampleSite/content/about.es.md
-- exampleSite/content/contact.md
+- exampleSite/content/about.md
 - exampleSite/content/contact.es.md
-- exampleSite/content/projects.md
+- exampleSite/content/contact.md
 - exampleSite/content/projects.es.md
+- exampleSite/content/projects.md
