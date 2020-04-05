@@ -27,26 +27,26 @@ weight = 3
 name = "Contact me"
 url = "contact/"
 weight = 5
-[languages.pt-br]
+[languages.es]
 languagename = "Español"
 title = "Santiago González"
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Acerca Mí"
 url = "about/"
 weight = 1
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Blog"
 url = "posts/"
 weight = 2
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Projectos"
 url = "projects/"
 weight = 3
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Contacto"
 url = "contact/"
 weight = 5
-[languages.pt-br.params]
+[languages.es.params]
 author = "Santiago González"
 description = "Página técnica de Santiago González"
 footercontent = "Gracias por visitar mi página 😊"

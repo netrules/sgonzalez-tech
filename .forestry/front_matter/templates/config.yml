@@ -139,8 +139,8 @@ fields:
       label: Language Config
       template: language_config
   - type: field_group
-    name: pt-br
-    label: Pt Br
+    name: es
+    label: Es
     fields:
     - type: include
       name: include_language_config

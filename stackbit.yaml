@@ -118,7 +118,7 @@ models:
           - type: language_config
             name: en
           - type: language_config
-            name: pt-br
+            name: es
       - type: object
         name: taxonomies
         fields:
