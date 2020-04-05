@@ -31,7 +31,7 @@ weight = 5
 languagename = "Español"
 title = "Santiago González"
 [[languages.pt-br.menu.main]]
-name = "Sobre"
+name = "Acerca Mí"
 url = "about/"
 weight = 1
 [[languages.pt-br.menu.main]]
@@ -39,11 +39,11 @@ name = "Blog"
 url = "posts/"
 weight = 2
 [[languages.pt-br.menu.main]]
-name = "Projetos"
+name = "Projectos"
 url = "projects/"
 weight = 3
 [[languages.pt-br.menu.main]]
-name = "Contato"
+name = "Contacto"
 url = "contact/"
 weight = 5
 [languages.pt-br.params]
