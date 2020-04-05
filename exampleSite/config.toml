@@ -28,7 +28,7 @@ name = "Contact me"
 url = "contact/"
 weight = 5
 [languages.pt-br]
-languagename = "Português"
+languagename = "Espa"
 title = "João Ninguém"
 [[languages.pt-br.menu.main]]
 name = "Sobre"
@@ -78,11 +78,6 @@ name = "Github"
 url = "https://github.com/netrules/"
 weight = 1
 [[params.social]]
-icon = "fab fa-gitlab"
-name = "Gitlab"
-url = "https://gitlab.com/johndoe/"
-weight = 2
-[[params.social]]
 icon = "fab fa-linkedin"
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/santiago~/"
@@ -90,7 +85,7 @@ weight = 4
 [[params.social]]
 icon = "fab fa-medium"
 name = "Medium"
-url = "https://medium.com/@johndoe"
+url = "https://medium.com/@santythedev"
 weight = 5
 [[params.social]]
 icon = "fas fa-rss"
