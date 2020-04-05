@@ -39,7 +39,7 @@ name = "Blog"
 url = "posts/"
 weight = 2
 [[languages.es.menu.main]]
-name = "Projectos"
+name = "Proyectos"
 url = "projects/"
 weight = 3
 [[languages.es.menu.main]]
