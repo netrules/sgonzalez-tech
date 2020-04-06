@@ -1,7 +1,7 @@
 baseurl = "http://www.sgonzalez.tech/"
 canonifyurls = true
 defaultcontentlanguage = "en"
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "sgonzalez"
 languagecode = "en"
 paginate = 20
 pygmentscodefences = true
@@ -39,7 +39,7 @@ name = "Blog"
 url = "posts/"
 weight = 2
 [[languages.es.menu.main]]
-name = "Proyectos"
+name = "Projectos"
 url = "projects/"
 weight = 3
 [[languages.es.menu.main]]
