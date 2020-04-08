@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}" xml:lang="{{ .Site.Language.Lang }}" xmlns= "http://www.w3.org/1999/xhtml">
 
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
