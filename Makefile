@@ -2,6 +2,10 @@ HUGO_BIN=hugo
 
 .PHONY: prepare release build demo clean
 
+BASE = "/"
+staging: prepare
+	$(HUGO_BIN) server --buildDrafts --source demo --baseURL $(BASE) --appendPort=false
+
 build: prepare
 	$(HUGO_BIN) --source demo
 

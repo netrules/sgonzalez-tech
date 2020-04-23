@@ -1,5 +1,5 @@
 baseurl = "http://www.sgonzalez.tech/"
-canonifyurls = true
+canonifyurls = false
 defaultcontentlanguage = "en"
 disqusShortname = "sgonzalez"
 languagecode = "en"
