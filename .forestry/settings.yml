@@ -36,5 +36,6 @@ build:
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
-  instant_preview_command: cp -r exampleSite/ demo && mkdir -p demo/themes/hugo-coder
-    && cp -r . demo/themes/hugo-coder && hugo --source demo
+  instant_preview_command: "mkdir -p demo/themes/hugo-coder && rsync -av exampleSite/
+    demo \t&& rsync -av --exclude='demo' --exclude='exampleSite' --exclude='.git'
+    . demo/themes/hugo-coder && hugo --source demo"
