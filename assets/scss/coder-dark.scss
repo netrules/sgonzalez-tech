@@ -1,5 +1,8 @@
-@import "variables";
-@import "base_dark";
-@import "content_dark";
-@import "navigation_dark";
-@import "footer_dark";
+@import "libs/variables";
+
+@import "base/base_dark";
+
+@import "components/navigation_dark";
+
+@import "layout/footer_dark";
+@import "layout/content_dark";

@@ -1,7 +1,7 @@
 ---
 title: Contact
 slug: contact
-
+type: contact
 ---
 You can reach me at:
 
