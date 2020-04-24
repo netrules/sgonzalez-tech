@@ -63,12 +63,19 @@
   }
 }
 
-.avatar img{
-  width: 20rem;
-  height: auto;
-  border-radius: 50%;
-  @media only screen and (max-width : 768px) {
-    width: 10rem;
+.avatar{
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+  img{
+    width: 20rem;
+    height: auto;
+    border-radius: 50%;
+    @media only screen and (max-width : 768px) {
+      width: 10rem;
+    }
   }
 }
 
