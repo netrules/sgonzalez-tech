@@ -1,4 +1,4 @@
 tasks:
-  - init: make
+  - init: make staging
 image:
   file: .gitpod.Dockerfile

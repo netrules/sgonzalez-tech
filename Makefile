@@ -7,7 +7,7 @@ staging: prepare
 	make staging_prepare
 
 staging_server:
-	$(HUGO_BIN) server --buildDrafts --source demo --baseURL / --appendPort=false --watch --renderToDisk true &
+	$(HUGO_BIN) server --buildDrafts --source demo --baseURL / --appendPort=false --watch --renderToDisk true
 
 staging_prepare:
 ifeq ($(RSYNC_PERSIST),1)
