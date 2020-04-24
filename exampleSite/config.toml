@@ -14,17 +14,13 @@ languagename = "English"
 [[languages.en.menu.main]]
 name = "About"
 url = "about/"
-weight = 1
-[[languages.en.menu.main]]
-name = "Blog"
-url = "posts/"
 weight = 2
 [[languages.en.menu.main]]
 name = "Projects"
 url = "projects/"
 weight = 3
 [[languages.en.menu.main]]
-name = "Contact me"
+name = "Contact"
 url = "contact/"
 weight = 5
 [languages.es]
@@ -59,7 +55,7 @@ avatarurl = "images/avatar.jpg"
 colorscheme = "auto"
 commit = "https://github.com/netrules/sgonzalez-tech/tree/"
 custom_css = []
-custom_js = []
+custom_js = ["js/custom.js"]
 dateformat = "January 2, 2006"
 description = "Santiago González tech website"
 footercontent = "Thanks for viewing my website 😊"
