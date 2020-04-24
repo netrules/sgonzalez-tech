@@ -34,8 +34,7 @@ build:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.68.3
   preview_output_directory: public
-  install_dependencies_command: apt-get install -y npm
-  preview_docker_image: forestryio/hugo:latest
+  preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   instant_preview_command: apt-get install -y rsync && mkdir -p demo/themes/hugo-coder
     && rsync -av exampleSite/ demo && rsync -av --exclude='demo' --exclude='exampleSite'
