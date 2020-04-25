@@ -39,4 +39,4 @@ build:
   mount_path: "/srv"
   instant_preview_command: apt-get install -y rsync && mkdir -p demo/themes/hugo-coder
     && rsync -av exampleSite/ demo && rsync -av --exclude='demo' --exclude='exampleSite'
-    --exclude='.git' . demo/themes/hugo-coder && hugo --source demo
+    --exclude='.git' . demo/themes/hugo-coder && hugo --source demo &
