@@ -5,5 +5,9 @@
     </header>
 
     {{ .Content }}
+    {{ if and ( .Slug ) ( eq .Slug "contact" )}}
+      {{ partial "contact.html" . }}
+    {{ end }}
+
   </article>
 </section>

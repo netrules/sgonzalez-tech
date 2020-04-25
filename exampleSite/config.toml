@@ -12,6 +12,10 @@ title = "Santiago González Tech"
 [languages.en]
 languagename = "English"
 [[languages.en.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[languages.en.menu.main]]
 name = "About"
 url = "about/"
 weight = 2
@@ -22,26 +26,26 @@ weight = 3
 [[languages.en.menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 4
 [languages.es]
 languagename = "Español"
 title = "Santiago González"
 [[languages.es.menu.main]]
-name = "Acerca Mí"
-url = "about/"
+name = "Inicio"
+url = "/"
 weight = 1
 [[languages.es.menu.main]]
-name = "Blog"
-url = "posts/"
+name = "Acerca Mí"
+url = "about/"
 weight = 2
 [[languages.es.menu.main]]
-name = "Projectos"
+name = "Proyectos"
 url = "projects/"
 weight = 3
 [[languages.es.menu.main]]
 name = "Contacto"
 url = "contact/"
-weight = 5
+weight = 4
 [languages.es.params]
 author = "Santiago González"
 description = "Página técnica de Santiago González"

@@ -4,7 +4,6 @@ HUGO_BIN=hugo
 
 staging: prepare
 	make staging_server
-	make staging_prepare
 
 staging_server:
 	$(HUGO_BIN) server --buildDrafts --source demo --baseURL / --appendPort=false --watch --renderToDisk true
