@@ -32,7 +32,7 @@ languagename = "Español"
 title = "Santiago González"
 [[languages.es.menu.main]]
 name = "Inicio"
-url = "/"
+url = ""
 weight = 1
 [[languages.es.menu.main]]
 name = "Acerca Mí"
