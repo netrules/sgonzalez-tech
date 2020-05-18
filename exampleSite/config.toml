@@ -71,7 +71,7 @@ maxSeeAlsoItems = 5
 rtl = false
 since = 2020
 [params.fathomAnalytics]
-serverURL = "analytics.example.com"
+serverURL = "analytics.sgonzalez.tech"
 siteID = "ABCDE"
 [[params.social]]
 icon = "fab fa-github"
