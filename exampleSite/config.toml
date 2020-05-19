@@ -56,7 +56,7 @@ since = 2020
 [params]
 author = "Santiago González"
 avatarurl = "images/avatar.jpg"
-previewurl = "images/preview.png"
+previewurl = "https://sgonzalez.tech/images/preview.png"
 colorscheme = "auto"
 commit = "https://github.com/netrules/sgonzalez-tech/tree/"
 custom_css = []

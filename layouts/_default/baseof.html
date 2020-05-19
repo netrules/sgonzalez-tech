@@ -18,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Site.BaseURL | absURL }}" />
     {{ with .Site.Params.previewurl }}
-      <meta property="og:image" itemprop="image" content="{{ . | absURL }}"/>
+      <meta property="og:image" itemprop="image" content="{{ . }}"/>
     {{ end }}
     <meta property="og:updated_time" content="{{ now.Unix }}" />
     <meta property="og:image:width" content="256">
@@ -104,14 +104,6 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-    {{ with .Site.Params.previewurl }}
-      <link itemprop="thumbnailUrl" href="{{ . | relURL }}">
-      <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
-        <link itemprop="url" href="{{ . | relURL }}">
-      </span>
-    {{ end }}
-
-
     <main class="wrapper">
       {{ partial "header.html" . }}
 
