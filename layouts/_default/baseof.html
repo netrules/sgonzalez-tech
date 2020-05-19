@@ -104,6 +104,13 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+    {{ with .Site.Params.previewurl }}
+      <link itemprop="thumbnailUrl" href="{{ . }}">
+      <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="{{ . }}">
+      </span>
+    {{ end }}
+
     <main class="wrapper">
       {{ partial "header.html" . }}
 
