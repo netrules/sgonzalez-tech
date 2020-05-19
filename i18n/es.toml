@@ -11,6 +11,9 @@ other = "serie"
 one = "Un minuto de lectura"
 other = "{{ .Count }} minutos de lectura."
 
+[copyright_image]
+other = "derechos de autor a"
+
 [page_not_found]
 other = "Página no existe."
 

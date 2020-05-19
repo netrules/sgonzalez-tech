@@ -10,6 +10,9 @@ other = "series"
 [reading_time]
 other = "{{ .Count }}-minute read"
 
+[copyright_image]
+other = "image credits to"
+
 [page_not_found]
 other = "Page Not Found"
 
