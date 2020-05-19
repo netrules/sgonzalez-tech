@@ -1,4 +1,4 @@
-baseurl = "http://www.sgonzalez.tech/"
+baseurl = "http://sgonzalez.tech/"
 canonifyurls = false
 defaultcontentlanguage = "en"
 disqusShortname = "sgonzalez"

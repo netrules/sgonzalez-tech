@@ -16,7 +16,7 @@
     <meta property="og:title" content="{{ .Site.Title }}" />
     <meta property="og:description" content="{{ .Site.Params.description }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:url" content="{{ .Site.BaseURL | absURL }}" />
     <meta property="og:image" itemprop="image" content="https://sgonzalez.tech/images/preview.png"/>
     <meta property="og:updated_time" content="{{ now.Unix }}" />
     <meta property="og:image:width" content="256">
