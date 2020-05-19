@@ -102,6 +102,11 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+    <link itemprop="thumbnailUrl" href="https://sgonzalez.tech/images/preview.png">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+      <link itemprop="url" href="https://sgonzalez.tech/images/preview.png">
+    </span>
+
     <main class="wrapper">
       {{ partial "header.html" . }}
 
