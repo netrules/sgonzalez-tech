@@ -13,16 +13,18 @@
 
     {{ template "_internal/twitter_cards.html" . }}
 
-    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ .Site.Title }} Website" />
     <meta property="og:description" content="{{ .Site.Params.description }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Site.BaseURL | absURL }}" />
     {{ with .Site.Params.previewurl }}
       <meta property="og:image" itemprop="image" content="{{ . }}"/>
     {{ end }}
-    <meta property="og:updated_time" content="{{ now.Unix }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="256">
     <meta property="og:image:height" content="256">
+    <meta property="og:url" content="{{ .Site.BaseURL | absURL }}" />
+    <meta property="og:updated_time" content="{{ now.Unix }}" />
 
     {{ if .Permalink }}
       <base href="{{ .Permalink }}">
