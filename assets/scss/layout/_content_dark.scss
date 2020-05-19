@@ -1,7 +1,7 @@
 @mixin content_dark {
 
   .content {
-  
+
     .list {
       ul {
         li {
@@ -18,6 +18,13 @@
 
     .centered {
       .about {
+        background-color: #212121aa;
+        padding: 2rem;
+        border: 1px solid;
+        border-radius: 3rem;
+        h1, h2 {
+          color: $fg-color-dark;
+        }
         ul {
           li {
             a {
