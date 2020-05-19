@@ -12,7 +12,15 @@
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
     {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
+
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:image" itemprop="image" content="https://sgonzalez.tech/images/preview.png"/>
+    <meta property="og:updated_time" content="{{ now.Unix }}" />
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
 
     {{ if .Permalink }}
       <base href="{{ .Permalink }}">
@@ -94,6 +102,11 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+    <link itemprop="thumbnailUrl" href="https://sgonzalez.tech/images/preview.png">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+      <link itemprop="url" href="https://sgonzalez.tech/images/preview.png">
+    </span>
+
     <main class="wrapper">
       {{ partial "header.html" . }}
 
