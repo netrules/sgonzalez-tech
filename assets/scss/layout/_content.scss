@@ -122,21 +122,20 @@
     margin-top: 2.0rem;
     margin-bottom: 2.0rem;
     background-color: #ffffffee;
-    padding: 2rem;
-    border: 1px solid limegreen;
+    padding: 2rem 10rem;
+    border:2px solid limegreen;
+    box-shadow: 4px 4px 5px darkslateblue;
     border-radius: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
     h1 {
       margin-top: 2.0rem;
       margin-bottom: 0.5rem;
-      color:black;
+      color: $fg-color;
     }
     h2 {
       margin-top: 1.0rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
-      color:black;
+      color: $fg-color;
       @media only screen and (max-width : 768px) {
         font-size: 2.0rem;
       }
@@ -154,7 +153,6 @@
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem;
-          color:black;
           &:hover,
           &:focus {
             color: $link-color;
