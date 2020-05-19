@@ -27,15 +27,24 @@
       </header>
 
       <div>
+      {{/*
         {{ if .Params.featured_image }}
-          <img style="margin: 0 auto; display: block;" src='{{ .Params.featured_image }}' alt="Featured image"/>
-          <p style="text-align:center;">Image credits to <a href="{{ .Params.featured_sponsor_url }}">{{ .Params.featured_sponsor }}</a></p>
+          <img style="margin: 0 auto; display: block; max-width: 35%;" src='{{ .Params.featured_image }}' alt="Featured image"/>
+        {{ end }}
+      */}}
+        {{ if .Params.featured_image }}
+          {{ $data_partial := (partial (printf "sprites/%s.html" .Params.featured_image) .) }}
+          {{ $data_partial }}
+          <p style="text-align:center;">
+              Image credits to <a href="{{ .Params.featured_sponsor_url }}">{{ .Params.featured_sponsor }}</a>
+          </p>
         {{ end }}
         {{ .Content }}
       </div>
 
 
       <footer>
+        {{ partial "api/disqus.html" . }}
       </footer>
     </article>
 

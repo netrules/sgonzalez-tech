@@ -1,7 +1,9 @@
 <div class="masonry-item">
   <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">
     <div class="masonry-content">
-      <img src="{{ .Params.featured_image }}" alt="Dummy Image">
+      {{ $data_partial := (partial (printf "sprites/%s.html" .Params.featured_image) .) }}
+
+      {{ $data_partial }}
       <h3 class="masonry-title">{{ .Title }}</h3>
       <p class="masonry-description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span> {{ .Description }}</p>
     </div>

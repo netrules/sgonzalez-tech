@@ -1,0 +1,10 @@
+{{ $url := "sprites/anzimus-construction.png" }}
+<div class="masonry-image" alt="{{ .Title }}"
+  style="
+    background: url({{ $url | relURL }}) 0 0 no-repeat;
+    background-size: 600%;
+    height: 192px;
+    animation: like-gif steps(5) 2s infinite both;
+    animation-play-state: paused;
+  ">
+</div>

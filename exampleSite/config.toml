@@ -11,6 +11,7 @@ theme = "hugo-coder"
 title = "Santiago González Tech"
 [languages.en]
 languagename = "English"
+contentDir = "content/en"
 [[languages.en.menu.main]]
 name = "Home"
 url = "/"
@@ -30,6 +31,7 @@ weight = 4
 [languages.es]
 languagename = "Español"
 title = "Santiago González"
+contentDir = "content/es"
 [[languages.es.menu.main]]
 name = "Inicio"
 url = ""
