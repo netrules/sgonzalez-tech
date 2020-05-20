@@ -13,7 +13,9 @@ series = ["Theme", "Hugo"]
 
 ## Introduction
 
-Saludos estimados,
+Saludos, estimados:
+
+TBD - Esta página web aún está en producción
 
 ## Preparación
 

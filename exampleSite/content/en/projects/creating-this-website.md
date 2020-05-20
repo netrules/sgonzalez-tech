@@ -13,7 +13,9 @@ series = ["Theme", "Hugo"]
 
 ## Introduction
 
-Hello everybody,
+Hello, everybody:
+
+TBD - This website is still under active development
 
 ## Preparación
 

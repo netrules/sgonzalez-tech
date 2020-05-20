@@ -6,7 +6,7 @@ tags = []
 featured_image = "elthen-spider"
 featured_sponsor = "Elthen's Pixel Art Shop"
 featured_sponsor_url = "https://elthen.itch.io/2d-pixel-art-spider-sprites"
-description = "Un proyecto random."
+description = "Un proyecto que pronto sera desarrollado."
 categories = []
 series = ["Python", "Big Data"]
 +++
