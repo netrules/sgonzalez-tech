@@ -31,6 +31,21 @@
       text-justify: auto;
       hyphens: auto;
     }
+    .spoiler {
+      color: $fg-color;
+      background-color:$fg-color;
+      &:hover {
+        background-color:$bg-color;
+      }
+    }
+    .spoiler2{
+      color: $fg-color;
+      background-color:$fg-color;
+      &:hover{
+        color: $bg-color;
+      }
+    }
+
   }
   .post {
     .post-title {

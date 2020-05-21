@@ -1,6 +1,22 @@
 @mixin content_dark {
 
   .content {
+    article {
+      .spoiler {
+        color: $fg-color-dark;
+        background-color:$fg-color-dark;
+        &:hover {
+          background-color:$bg-color-dark;
+        }
+      }
+      .spoiler2{
+        color: $fg-color-dark;
+        background-color:$fg-color-dark;
+        &:hover{
+          color: $bg-color-dark;
+        }
+      }
+    }
 
     .list {
       ul {

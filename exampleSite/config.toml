@@ -9,96 +9,104 @@ pygmentscodefencesguesssyntax = true
 pygmentsstyle = "b2"
 theme = "hugo-coder"
 title = "Santiago González Tech"
+
 [languages.en]
-languagename = "English"
-contentDir = "content/en"
-[[languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-[[languages.en.menu.main]]
-name = "About"
-url = "about/"
-weight = 2
-[[languages.en.menu.main]]
-name = "Projects"
-url = "projects/"
-weight = 3
-[[languages.en.menu.main]]
-name = "Contact"
-url = "contact/"
-weight = 4
+  languagename = "English"
+  contentDir = "content/en"
+  [[languages.en.menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Projects"
+    url = "projects/"
+    weight = 3
+  [[languages.en.menu.main]]
+    name = "Contact"
+    url = "contact/"
+    weight = 4
 [languages.es]
-languagename = "Español"
-title = "Santiago González"
-contentDir = "content/es"
-[[languages.es.menu.main]]
-name = "Inicio"
-url = ""
-weight = 1
-[[languages.es.menu.main]]
-name = "Acerca Mí"
-url = "about/"
-weight = 2
-[[languages.es.menu.main]]
-name = "Proyectos"
-url = "projects/"
-weight = 3
-[[languages.es.menu.main]]
-name = "Contacto"
-url = "contact/"
-weight = 4
-[languages.es.params]
-author = "Santiago González"
-description = "Página técnica de Santiago González"
-footercontent = "Gracias por visitar mi página 😊"
-info = "DevOps & Software"
-keywords = "blog,desarrollador,personal,devops,software"
-since = 2020
+  languagename = "Español"
+  title = "Santiago González"
+  contentDir = "content/es"
+  [[languages.es.menu.main]]
+    name = "Inicio"
+    url = ""
+    weight = 1
+  [[languages.es.menu.main]]
+    name = "Acerca Mí"
+    url = "about/"
+    weight = 2
+  [[languages.es.menu.main]]
+    name = "Proyectos"
+    url = "projects/"
+    weight = 3
+  [[languages.es.menu.main]]
+    name = "Contacto"
+    url = "contact/"
+    weight = 4
+  [languages.es.params]
+    author = "Santiago González"
+    description = "Página técnica de Santiago González"
+    footercontent = "Gracias por visitar mi página 😊"
+    info = "DevOps & Software"
+    keywords = "blog,desarrollador,personal,devops,software"
+    since = 2020
+
 [params]
-author = "Santiago González"
-avatarurl = "images/avatar.jpg"
-previewurl = "https://sgonzalez.tech/images/preview.png"
-colorscheme = "auto"
-commit = "https://github.com/netrules/sgonzalez-tech/tree/"
-custom_css = []
-custom_js = ["js/custom.js"]
-dateformat = "January 2, 2006"
-description = "Santiago González tech website"
-footercontent = "Thanks for viewing my website 😊"
-hideCopyright = false
-hideCredits = false
-info = "DevOps & Software"
-keywords = "blog,developer,personal,devops,software"
-maxSeeAlsoItems = 5
-rtl = false
-since = 2020
-[params.fathomAnalytics]
-serverURL = "analytics.sgonzalez.tech"
-siteID = "ABCDE"
-[[params.social]]
-icon = "fab fa-github"
-name = "Github"
-url = "https://github.com/netrules/"
-weight = 1
-[[params.social]]
-icon = "fab fa-linkedin"
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/santiago~/"
-weight = 4
-[[params.social]]
-icon = "fab fa-medium"
-name = "Medium"
-url = "https://medium.com/@santythedev"
-weight = 5
-[[params.social]]
-icon = "fas fa-rss"
-name = "RSS"
-rel = "alternate"
-type = "application/rss+xml"
-url = "https://sgonzalez.tech/index.xml"
-weight = 6
+  author = "Santiago González"
+  avatarurl = "images/avatar.jpg"
+  previewurl = "https://sgonzalez.tech/images/preview.png"
+  colorscheme = "auto"
+  commit = "https://github.com/netrules/sgonzalez-tech/tree/"
+  custom_css = []
+  custom_js = ["js/custom.js"]
+  dateformat = "January 2, 2006"
+  description = "Santiago González tech website"
+  footercontent = "Thanks for viewing my website 😊"
+  hideCopyright = false
+  hideCredits = false
+  info = "DevOps & Software"
+  keywords = "blog,developer,personal,devops,software"
+  maxSeeAlsoItems = 5
+  rtl = false
+  since = 2020
+  [params.fathomAnalytics]
+    serverURL = "analytics.sgonzalez.tech"
+    siteID = "ABCDE"
+  [[params.social]]
+    icon = "fab fa-github"
+    name = "Github"
+    url = "https://github.com/netrules/"
+    weight = 1
+  [[params.social]]
+    icon = "fab fa-linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/santiago~/"
+    weight = 4
+  [[params.social]]
+    icon = "fab fa-medium"
+    name = "Medium"
+    url = "https://medium.com/@santythedev"
+    weight = 5
+  [[params.social]]
+    icon = "fas fa-rss"
+    name = "RSS"
+    rel = "alternate"
+    type = "application/rss+xml"
+    url = "https://sgonzalez.tech/index.xml"
+    weight = 6
+
 [taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
