@@ -24,7 +24,7 @@ Thus, I was inspired to proceed with this stack due to similar websites<sup>[1](
 
 ## PREPARATION
 
-First off, I wasn't able to envision the whole thing right off the bat. It was a process. I had to take advantage of tools which were readily available to me, specially considering the fact when I started I was looking for work ({{< spoiler "*and still am, lol*" >}}), with my only revenue coming from whatever freelance opportunities I found. Such as:
+First off, I wasn't able to envision the whole thing right off the bat. It was a process. I had to take advantage of tools which were readily available to me, specially considering the fact when I started I was looking for work (*{{< spoiler "and still am, lol" >}}*), with my only revenue coming from whatever freelance opportunities I found. Such as:
 
 1. Github Student Developer Pack [[education.github.com](https://education.github.com/pack)]: over 100 mostly free tools available for students, started using this because it was free and duh
     - .tech Domains [[get.tech](http://get.tech/)]: free domain used to host this site
