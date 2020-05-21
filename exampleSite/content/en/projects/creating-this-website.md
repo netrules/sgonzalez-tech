@@ -20,7 +20,7 @@ personal_notes = [
 
 I want to explain how I got around to making this website and the source of inspiration for making it. Since my [Portfolio v1](# "not added yet") version, I have been looking for alternatives to making a portfolio which could also serve as a blog, and this is the result I've come to.
 
-Thus, I was inspired to proceed with this stack due to similar websites<sup>[1](https://tkainrad.dev/posts/using-hugo-gitlab-pages-and-cloudflare-to-create-and-run-this-website/)</sup> (which I was able to channel with keywords like *static page generator*, *markdown*, *personal blog*), some of which also explained how to make a similar stack yourself. So, don't worry, I will not go too much into details so that we can appreciate some key points and keep it short.
+Thus, I was inspired to proceed with this stack due to similar websites <sup>[(for example)](https://tkainrad.dev/posts/using-hugo-gitlab-pages-and-cloudflare-to-create-and-run-this-website/)</sup> which I was able to channel with keywords like *static page generator*, *markdown*, *personal blog*, some of which also explained how to make a similar stack yourself. So, don't worry, I will not go too much into details so that we can appreciate some key points and keep it short.
 
 ## PREPARATION
 
@@ -40,7 +40,7 @@ Regarding preparation, that's about it. I had no clue what I wanted to include i
 So, one of the things which called my attention the most as I analyzed the repository, looked at its code, and generally familiarized myself with it, that most called my attention, was the fact that:
 > This theme is ready to import into Stackbit.
 
-It actually wasn't, because there was an [issue](https://github.com/luizdepra/hugo-coder/issues/280) preventing it to work, which I fixed adding a [PR](https://github.com/luizdepra/hugo-coder/pull/283), so that I could use Stackbit. So basically, Stackbit allows all-in-one management of your site, regarding CMS, domain and deployment, for which I chose Netlify, Github Pages and Forestry.
+It actually wasn't, because there was an [issue](https://github.com/luizdepra/hugo-coder/issues/280) preventing it to work, which I fixed adding a [PR](https://github.com/luizdepra/hugo-coder/pull/283 "oh, the joys of open source"), so that I could use Stackbit. So basically, Stackbit allows all-in-one management of your site, regarding CMS, domain and deployment, for which I chose Netlify, Github Pages and Forestry.
 
 I'll try to enumerate some of the custom things I have done so far:
 - [Gitpod.io](https://gitpod.io/) integration to work on content outside of Forestry, with freedom to change the template as I wish.
