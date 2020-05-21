@@ -53,9 +53,9 @@ Well, I can't say I am disappointed with what I have learned and been rewarded w
 
 TODO's:
 - Embelishment of SCSS (yes, the template uses SCSS which hugo compiles to CSS, which in turn is presented to the visitor)
-- Adding some images to explain the process with less text
-- Different presentations to this article, a TL;DR version or a slideshow explaining how to DYI.
-- Improve the home page to explain my skills and write a small self bio.
+- Maybe add a type of changelog instead of making this post so big. Instead just use adding some images to explain the process with less text
+- Different presentations to this article, a TL;DR version or a slideshow explaining how to DYI
+- Improve the home page to explain my skills and write a small self bio
 - Add affiliate programs to make some revenue while having fun 😉😅
 - Make emojis look better and impl. shortcode like https://gohugo.io/functions/emojify/ (maybe even use custom emoji spritesheet of my own?)
 
