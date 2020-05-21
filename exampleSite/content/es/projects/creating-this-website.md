@@ -15,7 +15,7 @@ series = ["Theme", "Hugo"]
 
 Saludos, estimados:
 
-TBD - Esta página web aún está en producción
+TBD - Esta página web aún está en producción ([solo disponible en inglés ahora](https://sgonzalez.tech/projects/creating-this-website/))
 
 ## Preparación
 
