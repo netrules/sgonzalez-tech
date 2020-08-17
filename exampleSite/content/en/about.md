@@ -274,7 +274,7 @@ window.onload = function(){
             // shouldn't need to keep using event default callback
             e.preventDefault();
             // remove no longer needed css, and set css
-            document.querySelector('.is-checked').classList.remove('is-checked');
+            this.parentElement.querySelector('.is-checked').classList.remove('is-checked');
             this.classList.add('is-checked');
             // set the filter
             var _shuffle = Shuffles[this.dataset.set];
