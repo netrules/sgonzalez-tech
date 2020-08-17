@@ -5,7 +5,7 @@ slug: about
 ---
 
 ## Datos
-- Interesado en al usabilidad y la ergonomía. Experiencia de usuario e interacción con la máquina son necesarios.
+- Interesado en la usabilidad y la ergonomía. Experiencia de usuario e interacción con la máquina son necesarios.
 - Dedicado e ingenioso, capacitado para desarrollar o solucionar algóritmos.
 - Orgulloso de lo que he estudiado y disfruto trabajar en eso.
 
