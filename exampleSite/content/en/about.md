@@ -16,7 +16,7 @@ slug: about
 
 i {
     font-size: 10rem;
-    padding: 30px;
+    padding: 15px;
     display:inline-block;
 }
 
@@ -31,15 +31,15 @@ i {
     /* display:inline-block; */
     background: #eee;
     margin: 0.5px;
-    width: 159px;
-    height: 160px;
+    width: 127px;
+    height: 128px;
     display: inline-flex;
     box-shadow: inset 1px 1px 5px 3px #706677;
 }
 
 .grid {
   max-width: 95%;
-  width:800px;
+  width:768px;
   margin: 0 auto;
   padding: 1px;
   background: #ddd;
@@ -124,6 +124,50 @@ li[data-groups='["design"]'],
 
 li[data-groups='["other"]'] {
   box-shadow: inset 1px 1px 35px 3px #ffcbf2;
+}
+
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-device-width: 640px) and (max-device-width: 768px) { 
+    .grid {
+        width: 640px;
+        max-width: 100vw;
+        left:0;
+    }
+}
+
+@media screen and (min-device-width: 512px) and (max-device-width: 639px) { 
+    .grid {
+        width: 512px;
+        max-width: 100vw;
+        left:0;
+    }
+}
+
+@media screen and (min-device-width: 384px) and (max-device-width: 511px) { 
+    .grid {
+        width: 384px;
+        max-width: 100vw;
+        left:0;
+    }
+}
+
+@media screen and (min-device-width: 256px) and (max-device-width: 383px) { 
+    .grid {
+        width: 256px;
+        max-width: 100vw;
+        left:0;
+    }
+}
+
+@media only screen and (max-device-width: 255px) {
+    .grid {
+        width: 128px;
+        max-width: 100vw;
+        left:0;
+    }
 }
 
 </style>
@@ -254,6 +298,7 @@ li[data-groups='["other"]'] {
 <li> <i class="devicon-atom-original-wordmark colored"></i> </li>
 <li> <i class="icon-codepen" style="color:#212121;"></i> </li>
 <li> <i class="devicon-gimp-plain colored"></i> </li>
+<li> <span class="iconify" data-icon="cib:godot-engine" data-inline="false"></span> </li>
 <li> <i class="devicon-photoshop-line colored"></i> </li>
 <li> <i class="devicon-sourcetree-plain-wordmark colored"></i> </li>
 <li> <i class="devicon-visualstudio-plain-wordmark colored"></i> </li>
