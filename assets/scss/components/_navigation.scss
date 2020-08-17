@@ -21,6 +21,9 @@
   .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    @media only screen and (max-width : 768px) {
+      position:absolute;
+    }
   }
   .navigation-list {
     float: right;
@@ -101,10 +104,12 @@
     display: none;
     @media only screen and (max-width : 768px) {
       display: block;
-      font-size: 2.4rem;
+      font-size: 5rem;
       font-weight: 400;
       line-height: 6.0rem;
       color: $fg-color;
+      right: 5px;
+      position: absolute;
       cursor: pointer;
       &:hover,
       &:focus {

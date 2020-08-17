@@ -14,7 +14,7 @@ slug: about
 <style>
 
 
-i {
+.grid i {
     font-size: 10rem;
     padding: 15px;
     display:inline-block;
