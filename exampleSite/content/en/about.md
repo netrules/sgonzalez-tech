@@ -28,7 +28,7 @@ i {
     display:inline-block;
 }
 
-svg {
+.grid svg {
     width:120px;
     height:120px;
     margin: auto;
@@ -40,7 +40,7 @@ svg {
     background: #eee;
     width: 160px;
     height: 160px;
-    display: flex;
+    display: inline-flex;
 }
 
 .grid {
@@ -50,6 +50,8 @@ svg {
   padding: 0;
   background: #ddd;
   text-align: center;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .button {
@@ -130,12 +132,15 @@ svg {
 <li data-groups='["programming"]'> <i class="devicon-dot-net-plain-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-go-line colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-html5-plain-wordmark colored"></i></li>
+<li data-groups='["design"]'><span class="iconify" data-icon="logos:hugo" data-inline="false"></span> </li>
 <li data-groups='["programming"]'> <i class="devicon-java-plain-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-javascript-plain colored"></i></li>
+<li data-groups='["design"]'><span class="iconify" data-icon="logos:jekyll" data-inline="false"></span> </li>
 <li data-groups='["programming"]'> <i class="devicon-jquery-plain-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-less-plain-wordmark colored"></i></li>
 <li data-groups='["design"]'> <span class="iconify" data-icon="logos:material-ui" data-inline="false"></span> </li>
 <li data-groups='["manager"]'> <i class="icon-maven" style="color:#ff6804;"></i></li>
+<li data-groups='["other"]'><span class="iconify" data-icon="logos:netlify" data-inline="false"></span> </li>
 <li data-groups='["other"]'> <i class="devicon-nginx-plain-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-nodejs-plain-wordmark colored"></i></li>
 <li data-groups='["manager"]'> <i class="devicon-npm-original-wordmark colored"></i></li>
@@ -143,6 +148,7 @@ svg {
 <li data-groups='["programming"]'> <i class="devicon-python-plain-wordmark colored"></i></li>
 <li data-groups='["design"]'> <i class="devicon-react-original-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-sass-original colored"></i></li>
+<li data-groups='["other"]'><span class="iconify" data-icon="logos:stackbit-icon" data-inline="false"></span> </li>
 <li data-groups='["other"]'> <i class="icon-tomcat" style="color:#d1a41a;"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-typescript-plain colored"></i></li>
 <li data-groups='["design"]'> <i class="devicon-vuejs-line-wordmark colored"></i></li>
@@ -155,53 +161,59 @@ svg {
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">SysAdmin</h3></summary>
 <p>
-<i class="icon-alpinelinux" style="color:#0D597F;"></i>
-<i class="devicon-android-plain-wordmark colored"></i>
-<i class="devicon-apple-original"></i>
-<i class="icon-archlinux" style="color:#1793d1;"></i>
-<i class="devicon-chrome-plain-wordmark"></i>
-<i class="devicon-debian-plain-wordmark colored"></i>
-<i class="devicon-firefox-plain-wordmark"></i>
-<i class="icon-gnome" style="color:black;"></i>
-<i class="devicon-ie10-original colored"></i>
-<i class="devicon-linux-plain colored"></i>
-<i class="icon-linux-mint" style="color:#00e000;"></i>
-<i class="devicon-redhat-plain-wordmark colored"></i>
-<i class="devicon-safari-plain-wordmark colored"></i>
-<i class="devicon-ssh-plain-wordmark colored"></i>
-<i class="icon-spring" style="color:#6cb33e;"></i>
-<i class="devicon-ubuntu-plain-wordmark colored"></i>
-<i class="icon-unity" style="color:black;"></i>
-<i class="devicon-vim-plain colored"></i>
-<i class="devicon-windows8-original colored"></i>
-<i class="icon-x11" style="color:black;"></i>
+<ul class="grid">
+<li> <i class="icon-alpinelinux" style="color:#0D597F;"></i> </li>
+<li> <i class="devicon-android-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-apple-original"></i> </li>
+<li> <i class="icon-archlinux" style="color:#1793d1;"></i> </li>
+<li> <i class="devicon-chrome-plain-wordmark"></i> </li>
+<li> <i class="devicon-debian-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-firefox-plain-wordmark"></i> </li>
+<li> <i class="icon-gnome" style="color:black;"></i> </li>
+<li> <i class="devicon-ie10-original colored"></i> </li>
+<li> <i class="devicon-linux-plain colored"></i> </li>
+<li> <i class="icon-linux-mint" style="color:#00e000;"></i> </li>
+<li> <i class="devicon-redhat-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-safari-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-ssh-plain-wordmark colored"></i> </li>
+<li> <i class="icon-spring" style="color:#6cb33e;"></i> </li>
+<li> <i class="devicon-ubuntu-plain-wordmark colored"></i> </li>
+<li> <i class="icon-unity" style="color:black;"></i> </li>
+<li> <i class="devicon-vim-plain colored"></i> </li>
+<li> <i class="devicon-windows8-original colored"></i> </li>
+<li> <i class="icon-x11" style="color:black;"></i> </li>
+</ul>
 </p>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">DevOps</h3></summary>
 <p>
-<i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-<!--i class="icon-azure" style="color:#0089d6;"></i-->
-<i class="devicon-bitbucket-plain-wordmark colored"></i>
-<i class="devicon-docker-plain-wordmark colored"></i>
-<i class="devicon-git-plain-wordmark colored"></i>
-<i class="devicon-github-plain-wordmark colored"></i>
-<i class="devicon-gitlab-plain-wordmark colored"></i>
-<i class="icon-google-code"></i>
-<i class="devicon-travis-plain colored"></i>
+<ul class="grid">
+<li> <i class="devicon-amazonwebservices-plain-wordmark colored"></i> </li>
+<li> <span class="iconify" data-icon="logos:azure" data-inline="false"></span> </li>
+<li> <i class="devicon-bitbucket-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-docker-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-git-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-github-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-gitlab-plain-wordmark colored"></i> </li>
+<li> <i class="icon-google-code"></i> </li>
+<li> <span class="iconify" data-icon="logos:travis-ci" data-inline="false"></span> </li>
+</ul>
 </p>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">Databases</h3></summary>
 <p>
-<i class="icon-mariadb" style="color:#003545;"></i>
-<i class="devicon-mongodb-plain-wordmark colored"></i>
-<i class="icon-mssql" style="color:#f11513;"></i>
-<i class="devicon-mysql-plain-wordmark colored"></i>
-<i class="devicon-oracle-original colored"></i>
-<li data-groups='["frame"]'> <i class="devicon-postgresql-plain-wordmark colored"></i></li>
+<ul class="grid">
+<li> <i class="icon-mariadb" style="color:#003545;"></i> </li>
+<li> <i class="devicon-mongodb-plain-wordmark colored"></i> </li>
+<li> <i class="icon-mssql" style="color:#f11513;"></i> </li>
+<li> <i class="devicon-mysql-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-oracle-original colored"></i> </li>
+<li> <i class="devicon-postgresql-plain-wordmark colored"></i> </li>
+</ul>
 </p>
 </details>
 
@@ -229,8 +241,10 @@ svg {
 
 ## References
 
+- https://github.com/Vestride/Shuffle
 - https://github.com/konpa/devicon/
 - https://github.com/fizzed/font-mfizz
+- https://iconify.design/
 
 <script>
 
@@ -244,7 +258,6 @@ window.onload = function(){
         itemSelector: 'li',
         useTransforms: false,
         sizer: sizer,
-        columnWidth: 160
     });
     
 
