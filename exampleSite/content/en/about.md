@@ -29,8 +29,8 @@ i {
 }
 
 .grid svg {
-    width:120px;
-    height:120px;
+    width:100px;
+    height:100px;
     margin: auto;
 }
 
@@ -92,6 +92,7 @@ i {
 
 .button-group {
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .button-group:after {
@@ -106,6 +107,15 @@ i {
   margin-left: 0;
   margin-right: 1px;
 }
+
+details {
+    text-align: center;
+}
+
+details summary, details summary * {
+    text-align: left;
+}
+
 </style>
 
 <details>
@@ -155,12 +165,10 @@ i {
 <li data-groups='["other"]'> <i class="devicon-wordpress-plain-wordmark colored"></i></li>
 <div class="my-sizer-element"></div>
 </ul>
-</p>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">SysAdmin</h3></summary>
-<p>
 <ul class="grid">
 <li> <i class="icon-alpinelinux" style="color:#0D597F;"></i> </li>
 <li> <i class="devicon-android-plain-wordmark colored"></i> </li>
@@ -168,8 +176,8 @@ i {
 <li> <i class="icon-archlinux" style="color:#1793d1;"></i> </li>
 <li> <i class="devicon-chrome-plain-wordmark"></i> </li>
 <li> <i class="devicon-debian-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-firefox-plain-wordmark"></i> </li>
-<li> <i class="icon-gnome" style="color:black;"></i> </li>
+<li> <span class="iconify" data-icon="logos:firefox" data-inline="false"></span> </li>
+<li> <span class="iconify" data-icon="simple-icons:gnome" data-inline="false"></span> </li>
 <li> <i class="devicon-ie10-original colored"></i> </li>
 <li> <i class="devicon-linux-plain colored"></i> </li>
 <li> <i class="icon-linux-mint" style="color:#00e000;"></i> </li>
@@ -178,34 +186,32 @@ i {
 <li> <i class="devicon-ssh-plain-wordmark colored"></i> </li>
 <li> <i class="icon-spring" style="color:#6cb33e;"></i> </li>
 <li> <i class="devicon-ubuntu-plain-wordmark colored"></i> </li>
-<li> <i class="icon-unity" style="color:black;"></i> </li>
 <li> <i class="devicon-vim-plain colored"></i> </li>
 <li> <i class="devicon-windows8-original colored"></i> </li>
 <li> <i class="icon-x11" style="color:black;"></i> </li>
 </ul>
-</p>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">DevOps</h3></summary>
-<p>
 <ul class="grid">
 <li> <i class="devicon-amazonwebservices-plain-wordmark colored"></i> </li>
 <li> <span class="iconify" data-icon="logos:azure" data-inline="false"></span> </li>
 <li> <i class="devicon-bitbucket-plain-wordmark colored"></i> </li>
+<li> <span class="iconify" data-icon="logos:codecov" data-inline="false"></span> </li>
 <li> <i class="devicon-docker-plain-wordmark colored"></i> </li>
 <li> <i class="devicon-git-plain-wordmark colored"></i> </li>
 <li> <i class="devicon-github-plain-wordmark colored"></i> </li>
 <li> <i class="devicon-gitlab-plain-wordmark colored"></i> </li>
+<li> <span class="iconify" data-icon="cib:gitpod" data-inline="false"></span> </li>
 <li> <i class="icon-google-code"></i> </li>
+<li> <span class="iconify" data-icon="logos:snyk" data-inline="false"></span> </li>
 <li> <span class="iconify" data-icon="logos:travis-ci" data-inline="false"></span> </li>
 </ul>
-</p>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">Databases</h3></summary>
-<p>
 <ul class="grid">
 <li> <i class="icon-mariadb" style="color:#003545;"></i> </li>
 <li> <i class="devicon-mongodb-plain-wordmark colored"></i> </li>
@@ -214,29 +220,28 @@ i {
 <li> <i class="devicon-oracle-original colored"></i> </li>
 <li> <i class="devicon-postgresql-plain-wordmark colored"></i> </li>
 </ul>
-</p>
 </details>
 
 ## Software used
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">Productivity</h3></summary>
-<p>
-<i class="devicon-atom-original-wordmark colored"></i>
-<i class="icon-codepen" style="color:#212121;"></i>
-<i class="devicon-gimp-plain colored"></i>
-<i class="devicon-photoshop-line colored"></i>
-<i class="devicon-sourcetree-plain-wordmark colored"></i>
-<i class="devicon-visualstudio-plain-wordmark colored"></i>
-</p>
+<ul class="grid">
+<li> <i class="devicon-atom-original-wordmark colored"></i> </li>
+<li> <i class="icon-codepen" style="color:#212121;"></i> </li>
+<li> <i class="devicon-gimp-plain colored"></i> </li>
+<li> <i class="devicon-photoshop-line colored"></i> </li>
+<li> <i class="devicon-sourcetree-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-visualstudio-plain-wordmark colored"></i> </li>
+<li> <span class="iconify" data-icon="logos:unity" data-inline="false"></span> </li>
+</ul>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">Teamwork</h3></summary>
-<p>
-<i class="devicon-slack-plain-wordmark colored"></i>
-<i class="devicon-trello-plain colored"></i>
-</p>
+<ul class="grid">
+<li> <i class="devicon-slack-plain-wordmark colored"></i> </li>
+<li> <i class="devicon-trello-plain colored"></i> </li>
 </details>
 
 ## References
@@ -287,6 +292,23 @@ window.onload = function(){
             }
         });
     }
+
+    // Fetch all the details element.
+    const details = document.querySelectorAll("details");
+
+    // Add the onclick listeners.
+    details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+        // Close all the details that are not targetDetail.
+        details.forEach((detail) => {
+        if (detail !== targetDetail) {
+            detail.removeAttribute("open");
+        }
+        });
+        targetDetail.focus();
+        targetDetail.scrollIntoView();
+    });
+    });
 }
 
 </script>
