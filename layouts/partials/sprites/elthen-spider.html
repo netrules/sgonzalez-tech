@@ -1,5 +1,13 @@
 {{ $url := "sprites/elthen-spider.png" }}
 <div class="masonry-image" alt="{{ .Title }}"
+{{ if isset . "maxWidth" }}
+  style="
+    background: url({{ $url | relURL }}) 0 0 no-repeat;
+    background-size: 2200%;
+    animation: like-gif steps(7) 2s infinite both;
+    animation-play-state: paused;
+  ">
+{{ else }}
   style="
     background: url({{ $url | relURL }}) 0 0 no-repeat;
     background-size: 2200%;
@@ -7,4 +15,5 @@
     animation-play-state: paused;
     width:100%;
   ">
+{{ end }}
 </div>
