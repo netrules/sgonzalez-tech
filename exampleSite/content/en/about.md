@@ -263,6 +263,7 @@ li[data-groups='["other"]'] {
 </div>
 
 <ul class="grid">
+<li data-groups='["other"]'> <span class="iconify" data-icon="logos:appveyor" data-inline="false"></span> </li>
 <li data-groups='["cloud"]'> <i class="devicon-amazonwebservices-plain-wordmark colored"></i> </li>
 <li data-groups='["cloud"]'> <span class="iconify" data-icon="logos:azure" data-inline="false"></span> </li>
 <li data-groups='["git"]'> <i class="devicon-bitbucket-plain-wordmark colored"></i> </li>
