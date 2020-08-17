@@ -13,14 +13,6 @@ slug: about
 
 <style>
 
-.my-sizer-element {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    float: left;
-    width: 5px;
-    height: 50px;
-}
 
 i {
     font-size: 10rem;
@@ -124,11 +116,11 @@ details summary, details summary * {
 </summary>
 <p>
 
-<div id="filters" class="button-group">
-<button class="button is-checked" data-filter='all'>show all</button>
-<button class="button" data-filter='1'>programming</button>
-<button class="button" data-filter='2'>design</button>
-<button class="button" data-filter="3">server / cms / libraries</button>
+<div class="filters button-group">
+<button class="button is-checked" data-filter='all' data-set='0'>show all</button>
+<button class="button" data-filter='programming' data-set='0'>programming</button>
+<button class="button" data-filter='design' data-set='0'>design</button>
+<button class="button" data-filter='other' data-set='0'>server / cms / libraries</button>
 </div>
 
 <ul class="grid">
@@ -158,37 +150,43 @@ details summary, details summary * {
 <li data-groups='["programming"]'> <i class="devicon-python-plain-wordmark colored"></i></li>
 <li data-groups='["design"]'> <i class="devicon-react-original-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-sass-original colored"></i></li>
+<li data-groups='["other"]'> <i class="icon-spring" style="color:#6cb33e;"></i> </li>
 <li data-groups='["other"]'><span class="iconify" data-icon="logos:stackbit-icon" data-inline="false"></span> </li>
 <li data-groups='["other"]'> <i class="icon-tomcat" style="color:#d1a41a;"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-typescript-plain colored"></i></li>
 <li data-groups='["design"]'> <i class="devicon-vuejs-line-wordmark colored"></i></li>
 <li data-groups='["other"]'> <i class="devicon-wordpress-plain-wordmark colored"></i></li>
-<div class="my-sizer-element"></div>
 </ul>
 </details>
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">SysAdmin</h3></summary>
+<div class="filters button-group">
+<button class="button is-checked" data-filter='all' data-set='1'>show all</button>
+<button class="button" data-filter='os' data-set='1'>operating system</button>
+<button class="button" data-filter='browser' data-set='1'>browser</button>
+<button class="button" data-filter='other' data-set='1'>ui / ide / tools</button>
+</div>
+
 <ul class="grid">
-<li> <i class="icon-alpinelinux" style="color:#0D597F;"></i> </li>
-<li> <i class="devicon-android-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-apple-original"></i> </li>
-<li> <i class="icon-archlinux" style="color:#1793d1;"></i> </li>
-<li> <i class="devicon-chrome-plain-wordmark"></i> </li>
-<li> <i class="devicon-debian-plain-wordmark colored"></i> </li>
-<li> <span class="iconify" data-icon="logos:firefox" data-inline="false"></span> </li>
-<li> <span class="iconify" data-icon="simple-icons:gnome" data-inline="false"></span> </li>
-<li> <i class="devicon-ie10-original colored"></i> </li>
-<li> <i class="devicon-linux-plain colored"></i> </li>
-<li> <i class="icon-linux-mint" style="color:#00e000;"></i> </li>
-<li> <i class="devicon-redhat-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-safari-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-ssh-plain-wordmark colored"></i> </li>
-<li> <i class="icon-spring" style="color:#6cb33e;"></i> </li>
-<li> <i class="devicon-ubuntu-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-vim-plain colored"></i> </li>
-<li> <i class="devicon-windows8-original colored"></i> </li>
-<li> <i class="icon-x11" style="color:black;"></i> </li>
+<li data-groups='["os"]'> <i class="icon-alpinelinux" style="color:#0D597F;"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-android-plain-wordmark colored"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-apple-original"></i> </li>
+<li data-groups='["os"]'> <i class="icon-archlinux" style="color:#1793d1;"></i> </li>
+<li data-groups='["browser"]'> <i class="devicon-chrome-plain-wordmark"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-debian-plain-wordmark colored"></i> </li>
+<li data-groups='["browser"]'> <span class="iconify" data-icon="logos:firefox" data-inline="false"></span> </li>
+<li data-groups='["os"]'> <span class="iconify" data-icon="simple-icons:gnome" data-inline="false"></span> </li>
+<li data-groups='["browser"]'> <i class="devicon-ie10-original colored"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-linux-plain colored"></i> </li>
+<li data-groups='["os"]'> <i class="icon-linux-mint" style="color:#00e000;"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-redhat-plain-wordmark colored"></i> </li>
+<li data-groups='["browser"]'> <i class="devicon-safari-plain-wordmark colored"></i> </li>
+<li data-groups='["other"]'> <i class="devicon-ssh-plain-wordmark colored"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-ubuntu-plain-wordmark colored"></i> </li>
+<li data-groups='["other"]'> <i class="devicon-vim-plain colored"></i> </li>
+<li data-groups='["os"]'> <i class="devicon-windows8-original colored"></i> </li>
+<li data-groups='["other"]'> <i class="icon-x11" style="color:black;"></i> </li>
 </ul>
 </details>
 
@@ -256,40 +254,31 @@ details summary, details summary * {
 
 window.onload = function(){
     var Shuffle = window.Shuffle;
-    var element = document.querySelector('.grid');
-    var sizer = element.querySelector('.my-sizer-element');
+    var Shuffles = [];
+    var currentFocus;
 
-    var shuffleInstance = new Shuffle(element, {
-        itemSelector: 'li',
-        useTransforms: false,
-        sizer: sizer,
-    });
-    
+    var _shuffles = document.querySelectorAll('.grid');
+    for (iter = 0; iter < _shuffles.length; ++iter) {
+        element = _shuffles[iter];
 
-    const filters = document.getElementById("filters");
-    const cbox = filters.querySelectorAll("button");
+        Shuffles[iter] = new Shuffle(element, {
+            itemSelector: 'li',
+            useTransforms: false
+        });
+    };
 
-    for (let i = 0; i < cbox.length; i++) {
-        cbox[i].addEventListener("click", function(e) {
+    // add events to filter buttons for each instance
+    var shuffleButtons = document.querySelectorAll(".filters button");
+    for (let i = 0; i < shuffleButtons.length; i++) {
+        shuffleButtons[i].addEventListener("click", function(e) {
+            // shouldn't need to keep using event default callback
             e.preventDefault();
+            // remove no longer needed css, and set css
             document.querySelector('.is-checked').classList.remove('is-checked');
             this.classList.add('is-checked');
-            var filterValue = this.dataset.filter;
-            console.log(typeof filterValue + " is " + filterValue);
-            switch(filterValue) {
-                case '1':
-                    shuffleInstance.filter('programming');
-                break;
-                case '2':
-                    shuffleInstance.filter('design');
-                break;
-                case '3':
-                    shuffleInstance.filter('other');
-                break;
-                case 'all':
-                    shuffleInstance.filter('all');
-                break;
-            }
+            // set the filter
+            var _shuffle = Shuffles[this.dataset.set];
+            _shuffle.filter(this.dataset.filter);
         });
     }
 
@@ -297,17 +286,20 @@ window.onload = function(){
     const details = document.querySelectorAll("details");
 
     // Add the onclick listeners.
-    details.forEach((targetDetail) => {
-    targetDetail.addEventListener("click", () => {
-        // Close all the details that are not targetDetail.
-        details.forEach((detail) => {
-        if (detail !== targetDetail) {
-            detail.removeAttribute("open");
-        }
+    details.forEach(function(targetDetail) {
+        targetDetail.addEventListener("click", () => {
+            // Close all the details that are not targetDetail.
+            details.forEach((detail) => {
+            if (detail !== targetDetail) {
+                detail.removeAttribute("open");
+            }
+            });
+            if(currentFocus != targetDetail) {
+                targetDetail.scrollIntoView();
+                targetDetail.focus();
+                currentFocus = targetDetail;
+            }
         });
-        targetDetail.focus();
-        targetDetail.scrollIntoView();
-    });
     });
 }
 
