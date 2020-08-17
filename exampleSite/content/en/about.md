@@ -30,7 +30,8 @@ i {
     list-style: none;
     /* display:inline-block; */
     background: #eee;
-    width: 160px;
+    margin: 0.5px;
+    width: 159px;
     height: 160px;
     display: inline-flex;
 }
@@ -39,7 +40,7 @@ i {
   max-width: 95%;
   width:800px;
   margin: 0 auto;
-  padding: 0;
+  padding: 1px;
   background: #ddd;
   text-align: center;
     flex-wrap: wrap;
@@ -108,6 +109,22 @@ details summary, details summary * {
     text-align: left;
 }
 
+li[data-groups='["programming"]'],
+ li[data-groups='["os"]'],
+ li[data-groups='["git"]'] {
+  box-shadow: inset 1px 1px 5px 3px #c0fdff;
+}
+
+li[data-groups='["design"]'],
+ li[data-groups='["browser"]'],
+ li[data-groups='["cloud"]'] {
+  box-shadow: inset 1px 1px 5px 3px #fee440;
+}
+
+li[data-groups='["other"]'] {
+  box-shadow: inset 1px 1px 5px 3px #ffcbf2;
+}
+
 </style>
 
 <details>
@@ -120,7 +137,7 @@ details summary, details summary * {
 <button class="button is-checked" data-filter='all' data-set='0'>show all</button>
 <button class="button" data-filter='programming' data-set='0'>programming</button>
 <button class="button" data-filter='design' data-set='0'>design</button>
-<button class="button" data-filter='other' data-set='0'>server / cms / libraries</button>
+<button class="button" data-filter='other' data-set='0'>server / managers / libraries</button>
 </div>
 
 <ul class="grid">
@@ -141,11 +158,11 @@ details summary, details summary * {
 <li data-groups='["programming"]'> <i class="devicon-jquery-plain-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-less-plain-wordmark colored"></i></li>
 <li data-groups='["design"]'> <span class="iconify" data-icon="logos:material-ui" data-inline="false"></span> </li>
-<li data-groups='["manager"]'> <i class="icon-maven" style="color:#ff6804;"></i></li>
+<li data-groups='["other"]'> <i class="icon-maven" style="color:#ff6804;"></i></li>
 <li data-groups='["other"]'><span class="iconify" data-icon="logos:netlify" data-inline="false"></span> </li>
 <li data-groups='["other"]'> <i class="devicon-nginx-plain-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-nodejs-plain-wordmark colored"></i></li>
-<li data-groups='["manager"]'> <i class="devicon-npm-original-wordmark colored"></i></li>
+<li data-groups='["other"]'> <i class="devicon-npm-original-wordmark colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-php-plain colored"></i></li>
 <li data-groups='["programming"]'> <i class="devicon-python-plain-wordmark colored"></i></li>
 <li data-groups='["design"]'> <i class="devicon-react-original-wordmark colored"></i></li>
@@ -192,19 +209,27 @@ details summary, details summary * {
 
 <details>
 <summary><h3 style="display:inline-block; margin:1.6rem 0 1.6rem 0;">DevOps</h3></summary>
+
+<div class="filters button-group">
+<button class="button is-checked" data-filter='all' data-set='2'>show all</button>
+<button class="button" data-filter='git' data-set='2'>git</button>
+<button class="button" data-filter='cloud' data-set='2'>cloud</button>
+<button class="button" data-filter='other' data-set='2'>ci / cd</button>
+</div>
+
 <ul class="grid">
-<li> <i class="devicon-amazonwebservices-plain-wordmark colored"></i> </li>
-<li> <span class="iconify" data-icon="logos:azure" data-inline="false"></span> </li>
-<li> <i class="devicon-bitbucket-plain-wordmark colored"></i> </li>
-<li> <span class="iconify" data-icon="logos:codecov" data-inline="false"></span> </li>
-<li> <i class="devicon-docker-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-git-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-github-plain-wordmark colored"></i> </li>
-<li> <i class="devicon-gitlab-plain-wordmark colored"></i> </li>
-<li> <span class="iconify" data-icon="cib:gitpod" data-inline="false"></span> </li>
-<li> <i class="icon-google-code"></i> </li>
-<li> <span class="iconify" data-icon="logos:snyk" data-inline="false"></span> </li>
-<li> <span class="iconify" data-icon="logos:travis-ci" data-inline="false"></span> </li>
+<li data-groups='["cloud"]'> <i class="devicon-amazonwebservices-plain-wordmark colored"></i> </li>
+<li data-groups='["cloud"]'> <span class="iconify" data-icon="logos:azure" data-inline="false"></span> </li>
+<li data-groups='["git"]'> <i class="devicon-bitbucket-plain-wordmark colored"></i> </li>
+<li data-groups='["other"]'> <span class="iconify" data-icon="logos:codecov" data-inline="false"></span> </li>
+<li data-groups='["other"]'> <i class="devicon-docker-plain-wordmark colored"></i> </li>
+<li data-groups='["git"]'> <i class="devicon-git-plain-wordmark colored"></i> </li>
+<li data-groups='["git"]'> <i class="devicon-github-plain-wordmark colored"></i> </li>
+<li data-groups='["git"]'> <i class="devicon-gitlab-plain-wordmark colored"></i> </li>
+<li data-groups='["other"]'> <span class="iconify" data-icon="cib:gitpod" data-inline="false"></span> </li>
+<li data-groups='["git"]'> <i class="icon-google-code"></i> </li>
+<li data-groups='["other"]'> <span class="iconify" data-icon="logos:snyk" data-inline="false"></span> </li>
+<li data-groups='["other"]'> <span class="iconify" data-icon="logos:travis-ci" data-inline="false"></span> </li>
 </ul>
 </details>
 
@@ -248,6 +273,8 @@ details summary, details summary * {
 - https://github.com/konpa/devicon/
 - https://github.com/fizzed/font-mfizz
 - https://iconify.design/
+- https://coolors.co/
+- https://clrs.cc/
 
 <script>
 
@@ -295,7 +322,7 @@ window.onload = function(){
             }
             });
             if(currentFocus != targetDetail) {
-                targetDetail.scrollIntoView();
+                targetDetail.scrollIntoView({behavior: "smooth", block: "start"});
                 targetDetail.focus();
                 currentFocus = targetDetail;
             }
