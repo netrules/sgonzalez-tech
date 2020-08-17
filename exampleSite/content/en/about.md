@@ -34,6 +34,7 @@ i {
     width: 159px;
     height: 160px;
     display: inline-flex;
+    box-shadow: inset 1px 1px 5px 3px #706677;
 }
 
 .grid {
@@ -112,17 +113,17 @@ details summary, details summary * {
 li[data-groups='["programming"]'],
  li[data-groups='["os"]'],
  li[data-groups='["git"]'] {
-  box-shadow: inset 1px 1px 5px 3px #c0fdff;
+  box-shadow: inset 1px 1px 35px 3px #c0fdff;
 }
 
 li[data-groups='["design"]'],
  li[data-groups='["browser"]'],
  li[data-groups='["cloud"]'] {
-  box-shadow: inset 1px 1px 5px 3px #fee440;
+  box-shadow: inset 1px 1px 35px 3px #fee440;
 }
 
 li[data-groups='["other"]'] {
-  box-shadow: inset 1px 1px 5px 3px #ffcbf2;
+  box-shadow: inset 1px 1px 35px 3px #ffcbf2;
 }
 
 </style>
