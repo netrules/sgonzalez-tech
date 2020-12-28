@@ -2,7 +2,7 @@
 date = "2020-05-02"
 title = "Marcy The Crow"
 slug = "marcythecrow"
-tags = ["unity3d", "game mechanics", "c#", "cwcl", "gamedev", "desktop"]
+tags = ["unity3d", "game mechanics", "csharp", "cwcl", "gamedev", "desktop"]
 description = "Un entretenido juego de Unity3D resultado de la jornada CWCL a través de Covid19."
 featured_image = true
 categories = []
