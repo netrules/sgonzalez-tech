@@ -16,7 +16,7 @@ series = ["Theme", "Jamstack"]
 <p>
     Página personal construída posterior a inspirarme en el portafolio, es una gran arquitecta con varíos años de experiencia profesional relacionada a la dirección de arte y espacios efímeros.
 </p>
-<p>Lanzado en Abril 2020.</p>
+<p>Publicado en Abril 2020.</p>
 <hr>
 <ul>
 	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://misabelrodriguez.com/">Visitar</a></li>

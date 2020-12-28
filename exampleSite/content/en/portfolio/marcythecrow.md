@@ -19,6 +19,6 @@ series = ["game development", "unity3d"]
 <p>Released May 2020.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://play.unity.com/mg/other/marcy-the-crow">Jugar</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://play.unity.com/mg/other/marcy-the-crow">Play</a></li>
 	<li><i class="fa fa-download"></i>&nbsp; <a href="#" class="disabled-link">Source code</a></li>
 </ul>

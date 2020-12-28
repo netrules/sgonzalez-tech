@@ -16,7 +16,7 @@ series = ["FOSS", "data science"]
 <p>
     Herramienta para explorar materias pendientes de la carrera y planificar por adelantado basado en los esquemas de tiempo de los prerrequisitos y la inherencia conectiva.
 </p>
-<p>Lanzado en Mayo 2019.</p>
+<p>Publicado en Mayo 2019.</p>
 <hr>
 <ul>
 	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://netrules.github.io/unapec-pensum/">Visitar</a></li>

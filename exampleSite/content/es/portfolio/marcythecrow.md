@@ -16,7 +16,7 @@ series = ["game development", "unity3d"]
 <p>
     Juego divertido inspirado de estar aburrido en la pandemia y buscando certificaciones. Incluye algunas mecánicas divertidas de vuelo e inspiradores modelos 3D low poly que conformaban la jornada de aprendizaje.
 </p>
-<p>Lanzado May 2020.</p>
+<p>Publicado May 2020.</p>
 <hr>
 <ul>
 	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://play.unity.com/mg/other/marcy-the-crow">Jugar</a></li>
