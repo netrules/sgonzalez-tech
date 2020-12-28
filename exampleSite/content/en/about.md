@@ -314,6 +314,7 @@ li[data-groups='["other"]'] {
 <li> <i class="devicon-trello-plain colored"></i> </li>
 </details>
 
+<!--
 ## References
 
 - https://github.com/Vestride/Shuffle
@@ -322,6 +323,7 @@ li[data-groups='["other"]'] {
 - https://iconify.design/
 - https://coolors.co/
 - https://clrs.cc/
+-->
 
 <script>
 
