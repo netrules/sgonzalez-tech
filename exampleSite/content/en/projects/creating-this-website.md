@@ -29,7 +29,7 @@ First off, I wasn't able to envision the whole thing right off the bat. It was a
 1. Github Student Developer Pack [[education.github.com](https://education.github.com/pack)]: over 100 mostly free tools available for students, started using this because it was free and duh
     - .tech Domains [[get.tech](http://get.tech/)]: free domain used to host this site
 
-2. Figuring out what static page generator I wanted to use, from my own research I found a few, i.e Gatsby, Jekyll, Ghost/Wordpress to Static Generator like Eleventy, [and plenty more](https://github.com/myles/awesome-static-generators) (heck, if you find one as interesting as Hugo and need a hand I might just be able to help out)
+2. Figuring out what static page generator I wanted to use, from my own research I found a few, i.e Gatsby, Jekyll, Ghost/Wordpress to Static Generator like Eleventy, [and plenty more](https://github.com/myles/awesome-static-generators) <sup>[and i mean plenty](https://www.oreilly.com/content/static-site-generators/)</sup> (heck, if you find one as interesting as Hugo and need a hand I might just be able to help out)
     - I decided to choose Hugo. Well, [gohugo.io](https://gohugo.io/), and I haven't been disappointed. It uses golang, which I already had some experience with and may it surprise you even though it looks like a dynamically typed language, it is not. It is a static page generator with a statically typed language.
 
 3. Well, actually, I had already decided to use Hugo by step two. I kinda decided to use the template first, by figuring out from a list of potential templates which one I liked the most, and [hugo-coder](https://github.com/luizdepra/hugo-coder) definitely won the prize.

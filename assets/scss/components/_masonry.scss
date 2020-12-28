@@ -43,6 +43,10 @@
             padding: 1.5rem;
             border-top: 1px solid rgba(0, 0, 0, .05);
             margin: 0;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            text-align: justify;
           }
         }
       }

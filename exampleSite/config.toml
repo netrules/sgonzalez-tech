@@ -22,8 +22,8 @@ title = "Santiago González Tech"
     url = "about/"
     weight = 2
   [[languages.en.menu.main]]
-    name = "Projects"
-    url = "projects/"
+    name = "Portfolio"
+    url = "portfolio/"
     weight = 3
   [[languages.en.menu.main]]
     name = "Contact"
@@ -42,8 +42,8 @@ title = "Santiago González Tech"
     url = "about/"
     weight = 2
   [[languages.es.menu.main]]
-    name = "Proyectos"
-    url = "projects/"
+    name = "Portafolio"
+    url = "portfolio/"
     weight = 3
   [[languages.es.menu.main]]
     name = "Contacto"
@@ -65,7 +65,7 @@ title = "Santiago González Tech"
   commit = "https://github.com/netrules/sgonzalez-tech/tree/"
   custom_css = []
   custom_js = ["js/custom.js"]
-  dateformat = "January 2, 2006"
+  dateformat = "January 2006"
   description = "Santiago González tech website"
   footercontent = "Thanks for viewing my website 😊"
   hideCopyright = false

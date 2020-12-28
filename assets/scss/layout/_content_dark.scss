@@ -1,6 +1,11 @@
 @mixin content_dark {
 
   .content {
+    .masonry-item {
+      color: #00ff7f !important;
+      background-color: #2b2b2b;
+    }
+
     article {
       .spoiler {
         color: $fg-color-dark;

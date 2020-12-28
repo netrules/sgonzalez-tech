@@ -1,0 +1,37 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <header>
+      <h1 class="title">{{ .Title }}</h1>
+      <style>
+      @keyframes like-gif {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 100%;
+        }
+      }
+      </style>
+    </header>
+
+    <div class="masonry-wrapper">
+      <div class="masonry">
+        {{- range .Paginator.Pages -}}
+          {{- .Render "li" -}}
+        {{- end -}}
+      </div>
+      <!--div class="masonry-footer">
+        <p>Created with &#10084; with <a href="//w3bits.com/tools/masonry-generator/" target="_blank" rel="external noopener nofollow">CSS Masonry Generator</a></p>
+      </div-->
+    </div>
+
+    <footer>
+      {{ partial "pagination.html" . }}
+      <script defer src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js" integrity="sha384-YnGSHPPWEUDKMHFPOVmNP7Xyfwx5G0CHet6IoNgiX6CbFZS8gCeIfEgB1MgPwjdI" crossorigin="anonymous"></script>
+      <script defer src="{{ "js/masonry.js" | relURL }}"></script>
+    </footer>
+  </section>
+{{ end }}
