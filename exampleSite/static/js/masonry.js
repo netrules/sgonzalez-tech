@@ -90,5 +90,8 @@ masonryEvents.forEach( function(event) {
   window.addEventListener(event, resizeAllMasonryItems);
 } );
 
-/* Do a resize once more when all the images finish loading */
-waitForImages();
+document.onreadystatechange = function () {
+    /* Do a resize once more when all the images finish loading */
+    waitForImages();
+    // console.log('DOM fully loaded and parsed');
+};
