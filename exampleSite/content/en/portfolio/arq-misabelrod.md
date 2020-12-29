@@ -2,11 +2,11 @@
 date = "2020-04-01"
 title = "Arq. María Rodríguez"
 slug = "arq-misabelrod"
-tags = ["golang", "unibit", "netlify", "github", "jamstack"]
+tags = ["golang", "unibit", "netlify", "github", "jamstack", "serverless"]
 description = "Architect with more than 4 years of professional experience."
 featured_image = true
 categories = []
-series = ["Theme", "Jamstack"]
+series = ["Theme", "Jamstack", "Portfolio"]
 +++
 
 <p>

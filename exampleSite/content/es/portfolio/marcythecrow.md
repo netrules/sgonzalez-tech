@@ -6,7 +6,7 @@ tags = ["unity3d", "game mechanics", "csharp", "cwcl", "gamedev", "desktop"]
 description = "Un entretenido juego de Unity3D resultado de la jornada CWCL a través de Covid19."
 featured_image = true
 categories = []
-series = ["game development", "unity3d"]
+series = ["Game Development", "Unity3D"]
 +++
 
 <p>

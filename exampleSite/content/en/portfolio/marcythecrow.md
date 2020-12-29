@@ -6,7 +6,7 @@ tags = ["unity3d", "game mechanics", "csharp", "cwcl", "gamedev", "desktop"]
 description = "A fun Unity3D game resulting from the COVID19 Create With Code Live journey."
 featured_image = true
 categories = []
-series = ["game development", "unity3d"]
+series = ["Game Development", "Unity3D"]
 +++
 
 <p>

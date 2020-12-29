@@ -6,7 +6,7 @@ tags = ["graphviz", "jquery", "javascript", "github", "graphql", "data analysis"
 description = "Una forma elaborada de mantener cuentas de las materias y visualizarlas con un diagrama."
 featured_image = true
 categories = []
-series = ["FOSS", "data science"]
+series = ["FOSS", "Data Science"]
 +++
 
 <p>

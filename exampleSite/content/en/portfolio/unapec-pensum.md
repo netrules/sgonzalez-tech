@@ -6,7 +6,7 @@ tags = ["graphviz", "jquery", "javascript", "github", "graphql", "data analysis"
 description = "An elaborated way to keep track of courses and visualize them through a diagram."
 featured_image = true
 categories = []
-series = ["FOSS", "data science"]
+series = ["FOSS", "Data Science"]
 +++
 
 <p>
@@ -16,7 +16,7 @@ series = ["FOSS", "data science"]
 <p>
     Tool to explore pending courses for my career and plan ahead of time based on the schematic chronology of prerequisites and inheritance parenthood.
 </p>
-<p>Released May 2020.</p>
+<p>Released May 2019.</p>
 <hr>
 <ul>
 	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://netrules.github.io/unapec-pensum/">Visit</a></li>

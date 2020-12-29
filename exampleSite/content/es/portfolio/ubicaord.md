@@ -6,7 +6,7 @@ tags = ["php", "cms", "mvc", "dao", "ecommerce", "education"]
 description = "Un distinto tipo de plataforma de negocios realizada con propósitos educativos."
 featured_image = true
 categories = []
-series = ["template", "ecommerce"]
+series = ["Template", "eCommerce"]
 +++
 
 <p>
