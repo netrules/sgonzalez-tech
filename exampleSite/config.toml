@@ -84,22 +84,17 @@ title = "Santiago González Tech"
     url = "https://github.com/netrules/"
     weight = 1
   [[params.social]]
-    icon = "fab fa-linkedin"
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/santiago~/"
-    weight = 4
-  [[params.social]]
     icon = "fab fa-medium"
     name = "Medium"
     url = "https://medium.com/@santythedev"
-    weight = 5
+    weight = 2
   [[params.social]]
     icon = "fas fa-rss"
     name = "RSS"
     rel = "alternate"
     type = "application/rss+xml"
     url = "https://sgonzalez.tech/index.xml"
-    weight = 6
+    weight = 3
 
 [taxonomies]
   category = "categories"
