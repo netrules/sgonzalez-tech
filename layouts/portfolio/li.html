@@ -1,8 +1,8 @@
-<div lang="{{ .Site.Language.Lang }}" class="gallery-item">
+<a lang="{{ .Site.Language.Lang }}" class="gallery-item" href="{{ .Params.ExternalLink | default .RelPermalink }}">
   <img src="/portfolio/{{ .Slug }}.png" alt="First name" />
   <h3 class="name">{{ .Title }}</h3>
   <p class="description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2006" ) }}</span> {{ .Description }}</p>
-</div>
+</a>
 
 <!--div class="masonry-item" >
   <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">

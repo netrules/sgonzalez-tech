@@ -33,13 +33,17 @@
         border-radius: 4px;
         background-color: white;
         grid-row-end: span 36;
+        text-decoration: none;
       }
-      .gallery-container > div > img {
+      .gallery-container > .gallery-item > img {
         /* width: 100%; */
         /* flex-basis: 100%; */
         max-height: 100%;
         flex-wrap: wrap;
         object-fit: contain;
+        border-radius: 10px;
+        top: 0;
+        margin: auto;
       }
       .gallery-container {
         grid-template-columns: repeat(5,minmax(100px,1fr));
@@ -53,54 +57,53 @@
         grid-gap: 10px;
         grid-auto-rows: 0;
       }
-
-      img {
-        border-radius: 10px;
-        top: 0;
-      }
-      .gallery-container > div > div {
-        display:flex;
-        position: relative;
-      }
-      .gallery-container > div:hover .description {
-        display: inline-flex;
-        text-align: center;
-      }
-      .gallery-container > div:hover > img {
-        display: flex;
-      }
-      .gallery-container > div > .name {
-        font-size: 2em;
+      .gallery-container > .gallery-item > .name {
         display: flex;
         bottom: 0;
         flex-basis: 100%;
         width: 1px;
-        padding: 1rem 0;
+        padding: 0 0 0 0;
         justify-content: center;
         font-weight: 700;
-        margin: unset;
+        margin: 0.5em 0 0 0;
+        color: #000;
       }
-      .gallery-container > div > .description {
+      .gallery-container > .gallery-item > .description {
         display: none;
         flex-basis: 100%;
         width: 1px;
         font-size: normal;
         bottom: 0;
+        padding-top: 1em;
+        border-top: 1px solid rgba(0,0,0,.05);
+      }
+      .gallery-container > .gallery-item > .description > .date {
+        margin: 2px;
       }
 
 
       .gallery-container:hover {
         border: 1px dashed #ff000066;
       }
-      .gallery-container:hover > div {
+      .gallery-container:hover > .gallery-item {
         opacity: 0.5;
         z-index: 9998;
       }
-
-      .gallery-container:hover > div:hover {
-        transform: scale(1.1);
+      .gallery-container > .gallery-item:hover {
         z-index:9999;
         opacity: 1;
+      }
+      .gallery-container > .gallery-item:hover > .name {
+        margin-top: 1em;
+      }
+      .gallery-container > .gallery-item:hover > .description {
+        display: inline-flex;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .gallery-container > .gallery-item:hover > img {
+        display: flex;
+        transform: scale(1.1);
       }
       </style>
     </header>
