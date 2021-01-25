@@ -1,15 +1,15 @@
-<div class="masonry-item" lang="{{ .Site.Language.Lang }}">
+<div lang="{{ .Site.Language.Lang }}" class="gallery-item">
+  <img src="/portfolio/{{ .Slug }}.png" alt="First name" />
+  <h3 class="name">{{ .Title }}</h3>
+  <p class="description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2006" ) }}</span> {{ .Description }}</p>
+</div>
+
+<!--div class="masonry-item" >
   <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">
     <div class="masonry-content">
-      <!--div class="masonry-image" alt="project capture"
-        style="
-          background: url('/portfolio/{{ .Slug }}.png') no-repeat center;
-          width:100%;
-        ">
-      </div-->
       <img class="masonry-image" src="/portfolio/{{ .Slug }}.png"/>
       <h3 class="masonry-title">{{ .Title }}</h3>
       <p class="masonry-description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2006" ) }}</span> {{ .Description }}</p>
     </div>
   </a>
-</div>
+</div-->

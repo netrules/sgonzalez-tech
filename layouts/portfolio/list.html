@@ -2,8 +2,8 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-  <section class="container list">
-    <header>
+  <section class="list">
+    <header class="container">
       <h1 class="title">{{ .Title }}</h1>
       <style>
       @keyframes like-gif {
@@ -14,18 +14,106 @@
           background-position: 100%;
         }
       }
+
+
+
+      /* Grid Format */
+      /*Formats the text inside the image*/
+      .gallery-container > .gallery-item {
+        display: flex;
+        position: relative;
+        flex-flow: wrap;
+        padding: 1em;
+        margin: 0.5em;
+        border: 1px;
+        overflow: hidden;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.3));
+        transition: filter .25s ease-in-out;
+        border-radius: 4px;
+        background-color: white;
+        grid-row-end: span 36;
+      }
+      .gallery-container > div > img {
+        /* width: 100%; */
+        /* flex-basis: 100%; */
+        max-height: 100%;
+        flex-wrap: wrap;
+        object-fit: contain;
+      }
+      .gallery-container {
+        grid-template-columns: repeat(5,minmax(100px,1fr));
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        font-family: Lato,Helvetica,sans-serif;
+        /* margin: auto; */
+        grid-gap: 10px;
+        grid-auto-rows: 0;
+      }
+
+      img {
+        border-radius: 10px;
+        top: 0;
+      }
+      .gallery-container > div > div {
+        display:flex;
+        position: relative;
+      }
+      .gallery-container > div:hover .description {
+        display: inline-flex;
+        text-align: center;
+      }
+      .gallery-container > div:hover > img {
+        display: flex;
+      }
+      .gallery-container > div > .name {
+        font-size: 2em;
+        display: flex;
+        bottom: 0;
+        flex-basis: 100%;
+        width: 1px;
+        padding: 1rem 0;
+        justify-content: center;
+        font-weight: 700;
+        margin: unset;
+      }
+      .gallery-container > div > .description {
+        display: none;
+        flex-basis: 100%;
+        width: 1px;
+        font-size: normal;
+        bottom: 0;
+      }
+
+
+      .gallery-container:hover {
+        border: 1px dashed #ff000066;
+      }
+      .gallery-container:hover > div {
+        opacity: 0.5;
+        z-index: 9998;
+      }
+
+      .gallery-container:hover > div:hover {
+        transform: scale(1.1);
+        z-index:9999;
+        opacity: 1;
+      }
       </style>
     </header>
 
-    <div class="masonry-wrapper">
-      <div class="masonry">
+    <div class="gallery-wrapper">
+      <div class="gallery-container">
         {{- range .Paginator.Pages -}}
           {{- .Render "li" -}}
         {{- end -}}
+        <!--div class="masonry-footer">
+          <p>Created with &#10084; with <a href="//w3bits.com/tools/masonry-generator/" target="_blank" rel="external noopener nofollow">CSS Masonry Generator</a></p>
+        </div-->
       </div>
-      <!--div class="masonry-footer">
-        <p>Created with &#10084; with <a href="//w3bits.com/tools/masonry-generator/" target="_blank" rel="external noopener nofollow">CSS Masonry Generator</a></p>
-      </div-->
     </div>
 
     <footer>
