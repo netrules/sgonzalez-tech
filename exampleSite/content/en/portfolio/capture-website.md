@@ -2,7 +2,7 @@
 date = "2019-11-13"
 title = "Capture Website"
 slug = "capture-website"
-tags = ["node.js", "api", "puppeteer", "npm-package", "screenshots", "documentation"]
+tags = ["node.js", "api", "javascript", "puppeteer", "npm-package", "screenshots", "documentation"]
 description = "Contributed to this project by sorting out an issue with a pending feature."
 featured_image = true
 categories = []

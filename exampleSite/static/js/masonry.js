@@ -90,6 +90,57 @@ masonryEvents.forEach( function(event) {
   window.addEventListener(event, resizeAllMasonryItems);
 } );
 
+const slim = new SlimSelect({
+  select: '#search-chips',
+  placeholder: 'Show All',
+  // Optional - In the event you want to alter/validate it as a return value
+
+  data: [
+    {text: 'GoLang'},
+    {text: 'Python'},
+    {text: 'PHP'},
+    {text: 'JavaScript'},
+    {text: 'GameDev'}
+  ],
+  addable: function (value) {
+    // return false or null if you do not want to allow value to be submitted
+    // if (value === 'bad') {return false}
+
+    // Return the value string
+    return value // Optional - value alteration // ex: value.toLowerCase()
+
+    // Optional - Return a valid data object. See methods/setData for list of valid options
+    return {
+      text: value,
+      value: value.toLowerCase()
+    }
+  },
+  onChange: function (info) {
+    var allItems = document.querySelectorAll('.gallery-item');
+    if( allItems ) {
+        for(var i=0;i<allItems.length;i++){
+            if(info.length > 0) {
+                for(var j=0;j<info.length;j++){
+                    console.log(allItems[j].querySelector('.tags').innerText);
+                    if(allItems[i].querySelector('.tags').innerText.indexOf(info[j].value.toLowerCase()) !== -1) {
+                        allItems[i].style.pointerEvents = "initial";
+                        allItems[i].style.opacity = 1;
+                        break;
+                    } else {
+                        allItems[i].style.pointerEvents = "none";
+                        allItems[i].style.opacity = 0;
+                    }
+                }
+            } else {
+                allItems[i].style.pointerEvents = "initial";
+                allItems[i].style.opacity = 1;
+            }
+        }
+    }
+    return true;
+  }
+});
+
 document.onreadystatechange = function () {
     /* Do a resize once more when all the images finish loading */
     waitForImages();

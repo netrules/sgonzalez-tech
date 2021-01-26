@@ -6,16 +6,9 @@
     <header class="container">
       <h1 class="title">{{ .Title }}</h1>
       <style>
-      @keyframes like-gif {
-        0% {
-          background-position: 0%;
-        }
-        100% {
-          background-position: 100%;
-        }
+      .search-wrapper {
+        padding:2rem 30%;
       }
-
-
 
       /* Grid Format */
       /*Formats the text inside the image*/
@@ -106,9 +99,19 @@
         transform: scale(1.1);
       }
       </style>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
     </header>
 
+    <div class="search-wrapper">
+      <!-- Options -->
+      <p class="search-title">Search by tags</p>
+      <select id="search-chips" class="search-chips" multiple>
+      </select>
+    </div>
+
     <div class="gallery-wrapper">
+
       <div class="gallery-container">
         {{- range .Paginator.Pages -}}
           {{- .Render "li" -}}
