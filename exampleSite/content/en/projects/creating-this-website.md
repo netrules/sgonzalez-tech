@@ -8,7 +8,7 @@ featured_image = "anzimus-construction"
 featured_sponsor = "Anzimus"
 featured_sponsor_url = "https://ansimuz.itch.io/patreons-top-down-collection"
 categories = []
-series = ["Theme", "Hugo"]
+series = ["Template", "Hugo"]
 personal_notes = [
     "https://www.w3schools.com/css/css_tooltip.asp",
     "https://gist.github.com/maxfenton/edab8e790bc04ea1ee1e",

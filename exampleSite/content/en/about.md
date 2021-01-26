@@ -324,6 +324,9 @@ li[data-groups='["other"]'] {
 - https://coolors.co/
 - https://clrs.cc/
 -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CSet%2CObject.assign"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js" integrity="sha512-VHIYn9ssmuPBliadBEgGCTRtCO4agkhQCxiPaTBKaAq0cm2KKpX+PE2klG1VfOHKKcN5eZcev0M3s5V2xXxVew==" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 <script>
 

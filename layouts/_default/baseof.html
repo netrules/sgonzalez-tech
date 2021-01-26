@@ -136,9 +136,10 @@
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CSet%2CObject.assign"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js" integrity="sha512-VHIYn9ssmuPBliadBEgGCTRtCO4agkhQCxiPaTBKaAq0cm2KKpX+PE2klG1VfOHKKcN5eZcev0M3s5V2xXxVew==" crossorigin="anonymous"></script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    {{ if .Site.Params.affiliate.infolinks }}
+      <script type="text/javascript"> var infolinks_pid = 3308552; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+    {{ end }}
   </body>
 
 </html>

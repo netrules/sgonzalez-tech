@@ -19,6 +19,6 @@ series = ["Python", "Open Source"]
 <p>Publicado en Nov 2019.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://github.com/sindresorhus/capture-website/pull/40" rel="nofollow">Ver el PR</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="https://github.com/sindresorhus/capture-website">Código fuente</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTosV" rel="nofollow">Ver el PR</a></li>
+	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTos2">Código fuente</a></li>
 </ul>

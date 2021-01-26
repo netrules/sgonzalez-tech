@@ -19,6 +19,6 @@ series = ["FOSS", "Data Science"]
 <p>Released May 2019.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://netrules.github.io/unapec-pensum/">Visit</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="https://github.com/netrules/unapec-pensum">Source code</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTokY">Visit</a></li>
+	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTokX">Source code</a></li>
 </ul>

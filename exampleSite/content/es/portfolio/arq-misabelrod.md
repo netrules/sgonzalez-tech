@@ -6,7 +6,7 @@ tags = ["golang", "unibit", "netlify", "github", "jamstack", "serverless"]
 description = "Arquitecta con más de 4 años de experiencia laboral."
 featured_image = true
 categories = []
-series = ["Theme", "Jamstack", "Portfolio"]
+series = ["Template", "Jamstack", "Portfolio"]
 +++
 
 <p>
@@ -19,6 +19,6 @@ series = ["Theme", "Jamstack", "Portfolio"]
 <p>Publicado en Abril 2020.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://misabelrodriguez.com/">Visitar</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="https://github.com/stackbithq/stackbit-theme-phantom">Código fuente</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etToax">Visitar</a></li>
+	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etToam">Código fuente</a></li>
 </ul>

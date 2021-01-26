@@ -6,7 +6,7 @@ tags = ["golang", "unibit", "netlify", "github", "jamstack", "serverless"]
 description = "Architect with more than 4 years of professional experience."
 featured_image = true
 categories = []
-series = ["Theme", "Jamstack", "Portfolio"]
+series = ["Template", "Jamstack", "Portfolio"]
 +++
 
 <p>
@@ -19,6 +19,6 @@ series = ["Theme", "Jamstack", "Portfolio"]
 <p>Released April 2020.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://misabelrodriguez.com/">Visit</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="https://github.com/stackbithq/stackbit-theme-phantom">Source code</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etToax">Visit</a></li>
+	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etToam">Source code</a></li>
 </ul>

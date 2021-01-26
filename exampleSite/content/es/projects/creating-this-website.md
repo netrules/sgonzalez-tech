@@ -8,7 +8,7 @@ featured_image = "anzimus-construction"
 featured_sponsor = "Anzimus"
 featured_sponsor_url = "https://ansimuz.itch.io/patreons-top-down-collection"
 categories = []
-series = ["Theme", "Hugo"]
+series = ["Template", "Hugo"]
 +++
 
 ## Introduction

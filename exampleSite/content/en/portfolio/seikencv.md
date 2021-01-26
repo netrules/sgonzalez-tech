@@ -6,7 +6,7 @@ tags = ["jquery", "css", "javascript", "template", "php", "konami"]
 description = "The first CV website I ever made with desire to publish an online portfolio."
 featured_image = true
 categories = []
-series = ["Theme", "Portfolio"]
+series = ["Template", "Portfolio"]
 +++
 
 <p>
@@ -22,6 +22,6 @@ series = ["Theme", "Portfolio"]
 <p>Released April 2018.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://ubicaord.000webhostapp.com/cv/">Visit</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTog1">Visit</a></li>
 	<li><i class="fa fa-download"></i>&nbsp; <a href="#" class="disabled-link">Source code</a></li>
 </ul>

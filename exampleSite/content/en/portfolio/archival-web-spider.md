@@ -19,6 +19,6 @@ series = ["Python", "Data Science"]
 <p>Released Feb 2020.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://gitpod.io/#https://github.com/netrules/archival-web-spider" rel="nofollow">Deploy in Gitpod</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="https://github.com/netrules/archival-web-spider">Source code</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etToon" rel="nofollow">Deploy in Gitpod</a></li>
+	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTooR">Source code</a></li>
 </ul>

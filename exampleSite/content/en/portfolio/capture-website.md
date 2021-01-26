@@ -19,6 +19,6 @@ series = ["NodeJS", "Open Source"]
 <p>Released Nov 2019.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="https://github.com/sindresorhus/capture-website/pull/40" rel="nofollow">Look at the PR</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="https://github.com/sindresorhus/capture-website">Source code</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTosV" rel="nofollow">Look at the PR</a></li>
+	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTos2">Source code</a></li>
 </ul>

@@ -19,6 +19,6 @@ series = ["Template", "eCommerce"]
 <p>Publicado en Diciembre 2018.</p>
 <hr>
 <ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://ubicao.tk">Visitar</a></li>
+	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTojV">Visitar</a></li>
 	<li><i class="fa fa-download"></i>&nbsp; <a href="#" class="disabled-link">Código fuente</a></li>
 </ul>

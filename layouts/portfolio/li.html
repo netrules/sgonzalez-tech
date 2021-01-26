@@ -1,6 +1,6 @@
 <a lang="{{ .Site.Language.Lang }}" class="gallery-item" href="{{ .Params.ExternalLink | default .RelPermalink }}">
   <img src="/portfolio/{{ .Slug }}.png" alt="First name" />
   <h3 class="name">{{ .Title }}</h3>
-  <small class="tags" style="text-align:center;">{{ .Params.Tags }}</small>
+  <small class="tags" style="text-align:center;">{{ .Params.Tags | append (.Date.Format ("2006" )) }}</small>
   <p class="description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2006" ) }}</span> {{ .Description }}</p>
 </a>
