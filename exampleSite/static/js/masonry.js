@@ -92,7 +92,7 @@ masonryEvents.forEach( function(event) {
 
 const slim = new SlimSelect({
   select: '#search-chips',
-  placeholder: 'Show All',
+  placeholder: 'All / Todas',
   // Optional - In the event you want to alter/validate it as a return value
 
   data: [

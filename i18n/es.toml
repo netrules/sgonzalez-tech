@@ -7,6 +7,9 @@ other = "tag"
 [series]
 other = "serie"
 
+[portfolio_search]
+other = "Buscar por etiquetas"
+
 [reading_time]
 one = "Un minuto de lectura"
 other = "{{ .Count }} minutos de lectura."
