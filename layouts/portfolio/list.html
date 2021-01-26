@@ -6,10 +6,7 @@
     <header class="container">
       <h1 class="title">{{ .Title }}</h1>
       <style>
-      .gallery-container:hover > .gallery-item {
-      }
       </style>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
     </header>
 
@@ -34,7 +31,8 @@
 
     <footer>
       {{ partial "pagination.html" . }}
-      <script defer src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js" integrity="sha384-YnGSHPPWEUDKMHFPOVmNP7Xyfwx5G0CHet6IoNgiX6CbFZS8gCeIfEgB1MgPwjdI" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js" integrity="sha384-/hEMVznvyx6pEFW94sh/jbsWKK7m9yrpAb00Lzd8LnNOdHkNRDMpdItAMjUHX/rF" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js" integrity="sha384-YnGSHPPWEUDKMHFPOVmNP7Xyfwx5G0CHet6IoNgiX6CbFZS8gCeIfEgB1MgPwjdI" crossorigin="anonymous"></script>
       <script defer src="{{ "js/masonry.js" | relURL }}"></script>
     </footer>
   </section>
