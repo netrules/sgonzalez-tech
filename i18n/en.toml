@@ -27,3 +27,6 @@ other = "You can head back to <a href=\"{{ . }}\">homepage</a>."
 
 [powered_by]
 other = "Powered by"
+
+[translator_fix]
+other = "This is in english."

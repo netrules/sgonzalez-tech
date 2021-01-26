@@ -28,3 +28,6 @@ other = "Puedes regresar a la <a href=\"{{ . }}\">primera página</a>."
 
 [powered_by]
 other = "Promovido por"
+
+[translator_fix]
+other = "Esto está en español."

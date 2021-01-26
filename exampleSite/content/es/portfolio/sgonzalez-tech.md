@@ -21,7 +21,7 @@ personal_notes = [
 <p>
     sgonzalez.tech fue inspirada de varios emprendedores online, basada en <a href="https://github.com/luizdepra/hugo-coder/">hugo coder</a>. Hugo Coder es un framework desarrollado en Golang para páginas estáticas y soluciones serverless.
 </p>
-{{< ads "bluehost" >}}
+{{< ads >}}
 <p>
     Publicado en Marzo 2020.
 </p>

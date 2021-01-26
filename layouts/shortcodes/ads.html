@@ -1,5 +1,5 @@
 {{ $scratch := newScratch }}
-{{ if len .Params | eq 0 }}
+{{ if or (len .Params | eq 0) (not (index .Site.Params.ads.embed (.Get 0))) }}
   {{ $scratch.Set "output" (slice) }}
   {{ $embeds := .Site.Params.ads.embed }}
   {{ range .Site.Params.ads.enabled_embed }}

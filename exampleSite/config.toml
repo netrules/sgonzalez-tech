@@ -76,10 +76,13 @@ title = "Santiago González Tech"
   rtl = false
   since = 2020
   [params.ads]
-    enabled_embed = ["bluehost","unity"]
+    enabled_embed = ["bluehost","unity","livechat","adsterra"]
   [params.ads.embed]
     bluehost = [
       "<a href='https://www.bluehost.com/track/sgonzalez/' target='_blank'> <img border='0' src='/please-dont-block-me/bluehost-728x90BW.png'> </a>"
+    ]
+    livechat = [
+      "<a href='https://www.livechat.com/?a=H2idxmLMg&utm_source=PP&utm_campaign=default_link&utm_source=PP&utm_medium=banner&utm_content=v56'><img src='https://cdn.livechatinc.com/partners/production/img/resources/livechat_v56@2x.jpg' alt='Live Chat Software' /></a>"
     ]
     unity = [
       "<iframe src='https://assetstore.unity.com/linkmaker/embed/list/6/widget-wide-light?aid=1100lfT2L' style='width:600px; height:100px; border:0px; display: block; margin: auto;'></iframe>"
