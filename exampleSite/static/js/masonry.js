@@ -124,7 +124,7 @@ const slim = new SlimSelect({
                     console.log(allItems[j].querySelector('.tags').innerText);
                     if(allItems[i].querySelector('.tags').innerText.indexOf(info[j].value.toLowerCase()) !== -1) {
                         allItems[i].style.pointerEvents = "initial";
-                        allItems[i].style.opacity = 1;
+                        allItems[i].style.opacity = null;
                         break;
                     } else {
                         allItems[i].style.pointerEvents = "none";
@@ -133,7 +133,7 @@ const slim = new SlimSelect({
                 }
             } else {
                 allItems[i].style.pointerEvents = "initial";
-                allItems[i].style.opacity = 1;
+                allItems[i].style.opacity = null;
             }
         }
     }

@@ -1,1 +1,6 @@
 http://genericgeekgirl.com/games/bureaucrocy/
+
+masonry:
+- https://masonry.desandro.com/
+- https://flexmasonry.now.sh/
+- https://w3bits.com/tools/masonry-generator

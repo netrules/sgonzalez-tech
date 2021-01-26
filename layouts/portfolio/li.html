@@ -4,13 +4,3 @@
   <small class="tags" style="text-align:center;">{{ .Params.Tags }}</small>
   <p class="description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2006" ) }}</span> {{ .Description }}</p>
 </a>
-
-<!--div class="masonry-item" >
-  <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">
-    <div class="masonry-content">
-      <img class="masonry-image" src="/portfolio/{{ .Slug }}.png"/>
-      <h3 class="masonry-title">{{ .Title }}</h3>
-      <p class="masonry-description"><span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2006" ) }}</span> {{ .Description }}</p>
-    </div>
-  </a>
-</div-->
