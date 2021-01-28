@@ -1,5 +1,5 @@
 {{ $output := slice }}
-{{ if or (not .ad_name) (not (index .Site.Params.ads.embed (.ad_name))) }}
+{{ if or (not .ad_name) (not (index .Site.Params.ads.embed .ad_name)) }}
   {{ $embeds := .Site.Params.ads.embed }}
   {{ range .Site.Params.ads.enabled_embed }}
     {{ $output = union ($output) (index $embeds .) }}

@@ -1,26 +1,26 @@
-{{ $output := slice }}
-{{ if or (len .Params | eq 0) (not (index .Site.Params.ads.embed (.Get 0))) }}
-  {{ $embeds := .Site.Params.ads.embed }}
-  {{ range .Site.Params.ads.enabled_embed }}
-    {{ $output = union ($output) (index $embeds .) }}
-  {{ end }}
-{{ else }}
-  {{ $output = index .Site.Params.ads.embed (.Get 0) }}
-{{ end }}
-
-<script>
-  let items = [];
-  {{ range $output }}
-    items.push({{print (safeHTML .)}});
-  {{ end }}
-
-  let placement_spot = items[Math.floor(Math.random() * items.length)]
-  let placement_html = "<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>"+placement_spot+"</span>";
-  document.write(placement_html);
-</script>
-
-<noscript>
-  <span style="width:600px; height:100px; border:0px; display: block; margin: auto;">
-  {{ safeHTML (index (shuffle $output) 0) }}
-  </span>
-</noscript>
+//{{ $output := slice }}
+//{{ if or (len .Params | eq 0) (not (index .Site.Params.ads.embed (.Get 0))) }}
+//  {{ $embeds := .Site.Params.ads.embed }}
+//  {{ range .Site.Params.ads.enabled_embed }}
+//    {{ $output = union ($output) (index $embeds .) }}
+//  {{ end }}
+//{{ else }}
+//  {{ $output = index .Site.Params.ads.embed (.Get 0) }}
+//{{ end }}
+//
+//<script>
+//  let items = [];
+//  {{ range $output }}
+//    items.push({{print (safeHTML .)}});
+//  {{ end }}
+//
+//  let placement_spot = items[Math.floor(Math.random() * items.length)]
+//  let placement_html = "<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>"+placement_spot+"</span>";
+//  document.write(placement_html);
+//</script>
+//
+//<noscript>
+//  <span style="width:600px; height:100px; border:0px; display: block; margin: auto;">
+//  {{ safeHTML (index (shuffle $output) 0) }}
+//  </span>
+//</noscript>
