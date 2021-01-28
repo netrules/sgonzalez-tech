@@ -7,18 +7,13 @@ description = "An elaborated way to keep track of courses and visualize them thr
 featured_image = true
 categories = []
 series = ["FOSS", "Data Science"]
+ctas = [
+    ["Visit", "http://gestyy.com/etTokY", "terminal"],
+    ["Source code", "http://gestyy.com/etTokX", "download", "true"]
+]
+preferred_ad = ""
 +++
 
 <p>
-<em>An elaborated way to keep track of courses and visualize them through a diagram.</em>
-</p>
-<hr>
-<p>
     Tool to explore pending courses for my career and plan ahead of time based on the schematic chronology of prerequisites and inheritance parenthood.
 </p>
-<p>Released May 2019.</p>
-<hr>
-<ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTokY">Visit</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTokX">Source code</a></li>
-</ul>

@@ -7,18 +7,13 @@ description = "Contribución a este proyecto al resolver un problema con un feat
 featured_image = true
 categories = []
 series = ["Python", "Open Source"]
+ctas = [
+    ["Ver el PR", "http://gestyy.com/etTosV", "terminal"],
+    ["Código fuente", "http://gestyy.com/etTos2", "download"]
+]
+preferred_ad = ""
 +++
 
 <p>
-<em>Contribución a este proyecto al resolver un problema con un feature pendiente.</em>
-</p>
-<hr>
-<p>
     Culminado resolviendo el problema y creado un compromiso con el proyecto para llevar a cabo una implementación adecuada.
 </p>
-<p>Publicado en Nov 2019.</p>
-<hr>
-<ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTosV" rel="nofollow">Ver el PR</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTos2">Código fuente</a></li>
-</ul>

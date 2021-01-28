@@ -7,18 +7,13 @@ description = "Un distinto tipo de plataforma de negocios realizada con propósi
 featured_image = true
 categories = []
 series = ["Template", "eCommerce"]
+ctas = [
+    ["Visitar", "http://gestyy.com/etTojV", "terminal"],
+    ["Código fuente", "#", "download", "true"]
+]
+preferred_ad = ""
 +++
 
 <p>
-<em>Un distinto tipo de plataforma de negocios realizada con propósitos educativos.</em>
-</p>
-<hr>
-<p>
     Una página web eCommerce completamente personalizada para intercambiar bienes o servicios, realizada y diseñada completamente desde los cimientos por propósitos educativos. Completamente funcional con base de datos, backend php y algo de diseño front-end.
 </p>
-<p>Publicado en Diciembre 2018.</p>
-<hr>
-<ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTojV">Visitar</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="#" class="disabled-link">Código fuente</a></li>
-</ul>

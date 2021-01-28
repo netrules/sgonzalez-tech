@@ -7,12 +7,13 @@ description = "Contributed to this project by sorting out an issue with a pendin
 featured_image = true
 categories = []
 series = ["NodeJS", "Open Source"]
+ctas = [
+    ["Look at the PR", "http://gestyy.com/etTosV", "terminal"],
+    ["Source code", "http://gestyy.com/etTos2", "download"]
+]
+preferred_ad = ""
 +++
 
-<p>
-<em>Contributed to this project by sorting out an issue with a pending feature.</em>
-</p>
-<hr>
 <p>
     Ended up solving the issue and kept engaged with the project in order to carry out a proper implementation.
 </p>

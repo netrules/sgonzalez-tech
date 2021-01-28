@@ -7,18 +7,13 @@ description = "Medios eficientes para documentar la información de sus proyecto
 featured_image = true
 categories = []
 series = ["Python", "Data Science"]
+ctas = [
+    ["Desplegar en Gitpod", "http://gestyy.com/etToon", "terminal"],
+    ["Código fuente", "http://gestyy.com/etTooR", "download"]
+]
+preferred_ad = ""
 +++
 
 <p>
-<em>Medios eficientes para documentar la información de sus proyectos.</em>
-</p>
-<hr>
-<p>
     Proyecto inspirado por predecesores como archive.org, wget o curl y diversos proyectos gratuitos de conservación y archivado. Destinado a trabajar para un público más generalizado con un objetivo más amplio.
 </p>
-<p>Publicado en Feb 2020.</p>
-<hr>
-<ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etToon" rel="nofollow">Desplegar en Gitpod</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTooR">Código fuente</a></li>
-</ul>

@@ -49,10 +49,28 @@
       </header>
 
       <div>
-        {{ if .Params.featured_image }}
+        {{- if .Params.featured_image -}}
           <img style="margin: 0 auto; display: block; max-width: 35%;" src='/portfolio/{{ .Slug }}.png' alt="Featured image"/>
-        {{ end }}
+        {{- end -}}
+        <p>
+        <em>{{- print .Params.description -}}</em>
+        </p>
+        <hr>
         {{ .Content }}
+        {{ partial "ads.html" (dict "Site" .Site "ad_name" .Params.preferred_ad) }}
+        <p>
+        {{- $rel_str := "Released in " -}}
+        {{- if eq .Site.Language.Lang "es" -}}
+          {{- $rel_str = "Publicado en " -}}
+        {{- end -}}
+        {{- print $rel_str (.Date.Format (.Site.Params.dateFormat | default "Jan 2006" )) "." -}}
+        </p>
+        <hr>
+        <ul>
+        {{- range .Params.ctas -}}
+            <li><i class="fa fa-{{index . 2}}"></i>&nbsp; <a href="{{index . 1}}" {{- if and (index . 4) (eq (index . 4) "true") -}}{{- print "class=\"disabled-link\"" -}}{{- end -}} rel="nofollow">{{index . 0}}</a></li>
+        {{- end -}}
+        </ul>
       </div>
     </article>
 

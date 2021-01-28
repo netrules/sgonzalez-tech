@@ -7,18 +7,13 @@ description = "Efficient means to documenting your projects info."
 featured_image = true
 categories = []
 series = ["Python", "Data Science"]
+ctas = [
+    ["Deploy in Gitpod", "http://gestyy.com/etToon", "terminal"],
+    ["Source code", "http://gestyy.com/etTooR", "download"]
+]
+preferred_ad = ""
 +++
 
 <p>
-<em>Efficient means to documenting your projects info.</em>
-</p>
-<hr>
-<p>
     Project inspired by the likes of archive.org, wget or curl and miscellaneous free archival and curation projects. Intended to work for a broader public with a larger objective.
 </p>
-<p>Released Feb 2020.</p>
-<hr>
-<ul>
-	<li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etToon" rel="nofollow">Deploy in Gitpod</a></li>
-	<li><i class="fa fa-download"></i>&nbsp; <a href="http://gestyy.com/etTooR">Source code</a></li>
-</ul>

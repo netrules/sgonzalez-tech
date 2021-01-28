@@ -12,21 +12,13 @@ personal_notes = [
     "https://gist.github.com/maxfenton/edab8e790bc04ea1ee1e",
     "https://codepen.io/ajerez/pen/ZYMWKe"
 ]
+ctas = [
+    ["Visitar", "http://gestyy.com/etTohh", "terminal"],
+    ["Código fuente", "#", "download", "true"]
+]
+preferred_ad = ""
 +++
 
 <p>
-    <em>Solamente una página de blogging poco convencional.</em>
-</p>
-<hr>
-<p>
     sgonzalez.tech fue inspirada de varios emprendedores online, basada en <a href="https://github.com/luizdepra/hugo-coder/">hugo coder</a>. Hugo Coder es un framework desarrollado en Golang para páginas estáticas y soluciones serverless.
 </p>
-{{< ads >}}
-<p>
-    Publicado en Marzo 2020.
-</p>
-<hr>
-<ul>
-    <li><i class="fa fa-terminal"></i>&nbsp; <a href="http://gestyy.com/etTohh">Visitar</a></li>
-    <li><i class="fa fa-download"></i>&nbsp; <a href="#" class="disabled-link">Código fuente</a></li>
-</ul>

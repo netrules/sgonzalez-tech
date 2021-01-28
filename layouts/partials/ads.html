@@ -9,18 +9,19 @@
 {{ end }}
 
 <script>
-  let items = [];
-  {{ range $output }}
-    items.push({{print (safeHTML .)}});
-  {{ end }}
-
-  let placement_spot = items[Math.floor(Math.random() * items.length)]
-  let placement_html = "<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>"+placement_spot+"</span>";
-  document.write(placement_html);
+  {{- $script := "let items = [];" -}}
+  {{- range (shuffle $output) -}}
+    {{- $script = printf "%s%s" $script (printf "items.push(\"%s\");" .) -}}
+  {{- end -}}
+  {{- $script = printf "%s%s" $script "let placement_spot = items[Math.floor(Math.random() * items.length)];" -}}
+  {{- $script = printf "%s%s" $script "let placement_html = \"<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>\"+placement_spot+\"</span>\";" -}}
+  {{- $script = printf "%s%s" $script "document.write(placement_html);" -}}
+  {{- printf "%v" $script | safeJS -}}
+  // print ( printf "%v" $script | safeJS | resources.FromString . ) | resources.Minify | safeHTML
 </script>
 
 <noscript>
   <span style="width:600px; height:100px; border:0px; display: block; margin: auto;">
-  {{ safeHTML (index (shuffle $output) 0) }}
+  {{ safeHTML (index ($output) (seq (len $output) | shuffle | first 1 )) }}
   </span>
 </noscript>
