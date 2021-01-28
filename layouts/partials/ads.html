@@ -1,5 +1,5 @@
 {{ $output := slice }}
-{{ if or (not .ad_name) (not (index .Site.Params.ads.embed .ad_name)) }}
+{{ if or (not .ad_name) (not (in .Site.Params.ads.enabled_embed .ad_name)) }}
   {{ $embeds := .Site.Params.ads.embed }}
   {{ range .Site.Params.ads.enabled_embed }}
     {{ $output = union ($output) (index $embeds .) }}
@@ -23,5 +23,6 @@
 <noscript>
   <span style="width:600px; height:100px; border:0px; display: block; margin: auto;">
   {{ safeHTML (index $output 0) }}
+  // (seq (len $output) | shuffle | first 1 ))
   </span>
 </noscript>
