@@ -1,4 +1,5 @@
 {{ $output := slice }}
+{{ $append_name := "default" }}
 {{ if or (not .ad_name) (not (in .Site.Params.ads.enabled_embed .ad_name)) }}
   {{ $embeds := .Site.Params.ads.embed }}
   {{ range .Site.Params.ads.enabled_embed }}
@@ -6,18 +7,18 @@
   {{ end }}
 {{ else }}
   {{ $output = index .Site.Params.ads.embed (.ad_name) }}
+  {{ $append_name = ( print "-" .ad_name ) }}
 {{ end }}
 
-<script>
-  {{- $script := "let items = [];" -}}
-  {{- range (shuffle $output) -}}
-    {{- $script = printf "%s%s" $script (printf "items.push(\"%s\");" .) -}}
-  {{- end -}}
-  {{- $script = printf "%s%s" $script "let placement_spot = items[Math.floor(Math.random() * items.length)];" -}}
-  {{- $script = printf "%s%s" $script "let placement_html = \"<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>\"+placement_spot+\"</span>\";" -}}
-  {{- $script = printf "%s%s" $script "document.write(placement_html);" -}}
-  {{- printf "%v" $script | safeJS -}}
-  // print ( printf "%v" $script | safeJS | resources.FromString . ) | resources.Minify | safeHTML
+{{- $script := "let items = [];" -}}
+{{- range (shuffle $output) -}}
+  {{- $script = printf "%s%s" $script (printf "items.push(\"%s\");" .) -}}
+{{- end -}}
+{{- $script = printf "%s%s" $script "let placement_spot = items[Math.floor(Math.random() * items.length)];" -}}
+{{- $script = printf "%s%s" $script "let placement_html = \"<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>\"+placement_spot+\"</span>\";" -}}
+{{- $script = printf "%s%s" $script "document.write(placement_html);" -}}
+{{- $ad_script := (( $script | resources.FromString (printf "blogfuture-%s.js" $append_name ) ) | resources.Minify ) | resources.Fingerprint "sha512" -}}
+<script type="text/javascript" src="{{- $ad_script.Permalink -}}" integrity="{{- $ad_script.Data.Integrity -}}" >
 </script>
 
 <noscript>
