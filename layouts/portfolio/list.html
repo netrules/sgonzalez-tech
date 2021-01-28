@@ -10,6 +10,8 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
     </header>
 
+{{ partial "ads.html" (dict "Site" .Site "ad_name" slice) }}
+
     <div class="search-wrapper">
       <!-- Options -->
       <p class="search-title">{{ i18n "portfolio_search" }}</p>

@@ -16,7 +16,7 @@ series = ["Game Development", "Unity3D"]
 <p>
     Juego divertido inspirado de estar aburrido en la pandemia y buscando certificaciones. Incluye algunas mecánicas divertidas de vuelo e inspiradores modelos 3D low poly que conformaban la jornada de aprendizaje.
 </p>
-{{ ads "unity" }}
+{{< ads "unity" >}}
 <p>Publicado Mayo 2020.</p>
 <hr>
 <ul>

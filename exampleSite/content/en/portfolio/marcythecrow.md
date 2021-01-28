@@ -16,7 +16,7 @@ series = ["Game Development", "Unity3D"]
 <p>
     Fun game inspired by being bored in the pandemic and looking for certifications. Includes some fun fly mechanics and inspiring 3D low poly models which were part of the learning journey.
 </p>
-{{ ads "unity" }}
+{{< ads "unity" >}}
 <p>Released May 2020.</p>
 <hr>
 <ul>
