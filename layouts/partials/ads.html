@@ -15,14 +15,14 @@
   {{- $script = printf "%s%s" $script (printf "items.push(\"%s\");" .) -}}
 {{- end -}}
 {{- $script = printf "%s%s" $script "let placement_spot = items[Math.floor(Math.random() * items.length)];" -}}
-{{- $script = printf "%s%s" $script "let placement_html = \"<span style='width:600px; height:100px; border:0px; display: block; margin: auto;'>\"+placement_spot+\"</span>\";" -}}
+{{- $script = printf "%s%s" $script "let placement_html = \"<span style='width:600px; height:100px; border:0px; display: block; margin: auto; max-width: 100vw;'>\"+placement_spot+\"</span>\";" -}}
 {{- $script = printf "%s%s" $script "document.write(placement_html);" -}}
 {{- $ad_script := (( $script | resources.FromString (printf "blogfuture-%s.js" $append_name ) ) | resources.Minify ) | resources.Fingerprint "sha512" -}}
 <script type="text/javascript" src="{{- $ad_script.Permalink -}}" integrity="{{- $ad_script.Data.Integrity -}}" >
 </script>
 
 <noscript>
-  <span style="width:600px; height:100px; border:0px; display: block; margin: auto;">
+  <span style="width:600px; height:100px; border:0px; display: block; margin: auto; max-width:100vw;">
   {{ safeHTML (index $output 0) }}
   // (seq (len $output) | shuffle | first 1 ))
   </span>
