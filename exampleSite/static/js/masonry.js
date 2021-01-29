@@ -123,17 +123,20 @@ const slim = new SlimSelect({
                 for(var j=0;j<info.length;j++){
                     console.log(allItems[j].querySelector('.tags').innerText);
                     if(allItems[i].querySelector('.tags').innerText.indexOf(info[j].value.toLowerCase()) !== -1) {
-                        allItems[i].style.pointerEvents = "initial";
-                        allItems[i].style.opacity = null;
+                        // allItems[i].style.pointerEvents = "initial";
+                        // allItems[i].style.opacity = null;
+                        allItems[i].style.display = "flex";
                         break;
                     } else {
-                        allItems[i].style.pointerEvents = "none";
-                        allItems[i].style.opacity = 0;
+                        // allItems[i].style.pointerEvents = "none";
+                        // allItems[i].style.opacity = 0;
+                        allItems[i].style.display = "none";
                     }
                 }
             } else {
-                allItems[i].style.pointerEvents = "initial";
-                allItems[i].style.opacity = null;
+                // allItems[i].style.pointerEvents = "initial";
+                // allItems[i].style.opacity = null;
+                allItems[i].style.display = "flex";
             }
         }
     }
