@@ -122,11 +122,14 @@
   animation-duration: 0.75s;
 
   &:hover {
+    width: 250px;
+    height: 250px;
     -webkit-animation-name: wiggle;
     animation-name: wiggle;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     background: url(/images/avatar_anim.jpg);
+    background-size: cover;
   }
 }
 
