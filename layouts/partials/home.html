@@ -3,7 +3,8 @@
     <span style="opacity:0;">{{ i18n "translator_fix" }}</span>
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.avatarurl }}
-        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+        {{/* <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div> */}}
+      <div class="avatar-anim"></div>
       {{ end }}
     {{ end }}
     {{ with .Site.Params.gravatar }}
