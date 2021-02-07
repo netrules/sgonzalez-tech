@@ -76,7 +76,7 @@ title = "Santiago González Tech"
   rtl = false
   since = 2020
   [params.ads]
-    enabled_embed = ["bluehost","unity","livechat","adsterra", "greengeeks", "shareasale"]
+    enabled_embed = ["bluehost","unity","livechat","adsterra", "greengeeks", "shareasale", "shortest"]
   [params.ads.embed]
     bluehost = [
       "<a href='https://www.bluehost.com/track/sgonzalez/' target='_blank'> <img border='0' src='/please-dont-block-me/bluehost-728x90BW.png'> </a>"
@@ -92,6 +92,9 @@ title = "Santiago González Tech"
     ]
     shareasale = [
       "<a target='_blank' href='https://shareasale.com/r.cfm?b=922009&amp;u=2708801&amp;m=47&amp;urllink=&amp;afftrack='><img src='/please-dont-block-me/ShareASale-728x90BW.png' border='0' /></a>"
+    ]
+    shortest = [
+      "<a href='http://join-shortest.com/ref/e7ca0624b7?user-type=new'><img src='/please-dont-block-me/shortest-728x90BW.png' title='Los enlaces más pequeños, el pago más grande' width='728' height='90' />#ref-menu</a>"
     ]
   [params.affiliate]
     infolinks = false
