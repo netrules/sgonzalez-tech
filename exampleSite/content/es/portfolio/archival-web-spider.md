@@ -9,6 +9,7 @@ categories = []
 series = ["Python", "Data Science"]
 ctas = [
     ["Desplegar en Gitpod", "http://gestyy.com/etToon", "terminal"],
+    ["Ver paquete", "http://gestyy.com/etHZj5", "box"],
     ["Código fuente", "http://gestyy.com/etTooR", "download"]
 ]
 preferred_ad = ""
