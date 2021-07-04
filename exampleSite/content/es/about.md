@@ -15,7 +15,8 @@ slug: about
 
 
 .grid i {
-    font-size: 10rem;
+    font-size: 8rem;
+    margin: auto;
     padding: 15px;
     display:inline-block;
 }
